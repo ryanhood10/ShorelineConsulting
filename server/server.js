@@ -23,7 +23,7 @@ app.post('/contact', async (req, res) => {
     const { name, email, message } = req.body;
 
     let transporter = nodemailer.createTransport({
-      service: 'yahoo',
+      service: 'gmail',
       auth: {
         user: process.env.EMAIL,
         pass: process.env.PASSWORD,
@@ -32,8 +32,8 @@ app.post('/contact', async (req, res) => {
 
     const mailOptions = {
       from: process.env.EMAIL,
-      to: 'ryanhood4@yahoo.com',
-      subject: 'Contact Form Message',
+      to: 'connect@akirawebsolutions.com',
+      subject: 'ShorlineConsultingLLC - Contact Form Message',
       text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
     };
 
