@@ -1,0 +1,4 @@
+node_modules/
+shoreline-consulting-llc/node_modules/
+shoreline-consulting-llc/build/
+.env
