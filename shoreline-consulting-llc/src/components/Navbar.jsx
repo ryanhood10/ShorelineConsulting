@@ -24,7 +24,9 @@ const Navbar = () => {
               alt="Akira Web Solutions Logo"
               className="h-8 rounded-xl"
             />
-            <span>Shoreline Consulting</span>
+            <span
+            className='text-lg'
+            >Shoreline Consulting</span>
           </Link>
           <nav className="hidden md:flex space-x-6 pl-8">
             <Link to="/Solutions" className="hover:text-cyan-300 transition-colors duration-200">Solutions</Link>
