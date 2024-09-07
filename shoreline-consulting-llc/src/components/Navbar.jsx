@@ -27,7 +27,7 @@ const Navbar = () => {
             <span>Shoreline Consulting</span>
           </Link>
           <nav className="hidden md:flex space-x-6 pl-8">
-            <Link to="/Product" className="hover:text-cyan-300 transition-colors duration-200">Product</Link>
+            <Link to="/Solutions" className="hover:text-cyan-300 transition-colors duration-200">Solutions</Link>
             <Link to="/Pricing" className="hover:text-cyan-300 transition-colors duration-200">Pricing</Link>
             {/* <Link to="/Docs" className="hover:text-cyan-300 transition-colors duration-200">Docs</Link> */}
             <Link to="/Company" className="hover:text-cyan-300 transition-colors duration-200">Company</Link>
@@ -97,11 +97,11 @@ const Navbar = () => {
               </svg>
             </button>
             <Link
-              to="/Product"
+              to="/Solutions"
               className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
               onClick={closeMobileMenu}
             >
-              Product
+              Solutions
             </Link>
             <Link
               to="/Pricing"

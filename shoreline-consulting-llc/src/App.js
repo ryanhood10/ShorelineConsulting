@@ -10,7 +10,8 @@ import FooterSection from './components/FooterSection';
 import './App.css';  // Moved here
 import Contact from './components/Contact';
 import ContactHero from './components/ContactHero';
-
+import Solutions from './components/Solutions';
+import SolutionsVideo from './components/Video';
 
 
 
@@ -45,7 +46,41 @@ function App() {
                 </>
               }
             />
-          
+             <Route
+              path="/Solutions"
+              element={
+                <>
+                  <Navbar />
+                  <ContactHero />
+                  <Solutions />
+                  <SolutionsVideo />
+                  <Contact />
+                  <Footer />
+                </>
+              }
+            />
+          <Route
+              path="/Pricing"
+              element={
+                <>
+                  <Navbar />
+                  <ContactHero />
+                  <Contact />
+                  <Footer />
+                </>
+              }
+            />
+               <Route
+              path="/Company"
+              element={
+                <>
+                  <Navbar />
+                  <ContactHero />
+                  <Contact />
+                  <Footer />
+                </>
+              }
+            />
             {/* <Route
               path="/Product"
               element={

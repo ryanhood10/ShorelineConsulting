@@ -67,10 +67,10 @@ const CodeExamples = () => {
       </h2>
       {/* Sign Up link aligned to the right */}
       <a
-        href="/SignUp"
+        href="/Contact"
         className="group flex items-center gap-1 text-cyan-500 hover:text-cyan-300 ml-auto"
       >
-        Sign Up
+        Get Started
         <svg width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M12.1406 0.44043H13.0781V1.37793V10.7529V11.6904H11.2031V10.7529V3.64355L2.49219 12.3545L1.82812 13.0186L0.5 11.6904L1.16406 11.0264L9.875 2.31543H2.76562H1.82812V0.44043H2.76562H12.1406Z"

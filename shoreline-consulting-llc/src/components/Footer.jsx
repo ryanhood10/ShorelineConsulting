@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="text-center md:text-left mb-4 md:mb-0">
         <br/>
           <h2 className="text-xl font-bold text-cyan-500">Developed by Ryan Hood</h2>
-          <p>Find me on:</p>
+          <p>Find us on:</p>
           <div className="flex justify-center md:justify-start space-x-4 mt-2">
             <a
               href="https://www.linkedin.com/in/ryan-hood-11aa2b239/"
@@ -31,7 +31,7 @@ const Footer = () => {
 
         </div>
         <div className="text-center md:text-right">
-          <p className="text-sm text-gray-400">© 2024 Akira Web Solutions. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© 2024 Shoreline Consulting LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>
