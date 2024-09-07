@@ -17,7 +17,7 @@ const CredentialsSection = () => {
             best technologies
           </a>{' '}
           that help power your company's{' '}
-          <a href="/Product" className="underline hover:decoration-cyan-500">
+          <a href="/Solutions" className="underline hover:decoration-cyan-500">
             best solutions
           </a>
         </p>

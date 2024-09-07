@@ -1,11 +1,12 @@
 import React from 'react';
+import Robot from '../assets/IconRobot15.png'
 
 const FeaturesSection = () => {
   return (
     <section className="bg-white">
       <div className="container mx-auto py-12 md:py-24 text-black px-4 sm:px-6 lg:px-8">
         <h2 className="max-w-[44.5625rem] text-3xl font-light md:text-[3.375rem] leading-[120%] mx-auto text-center md:text-left">
-          More relevant results make better applications
+          Better technology applications make for better business
         </h2>
         <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-x-12 lg:gap-y-20">
           <div className="space-y-6 text-center lg:text-left">
@@ -29,7 +30,7 @@ const FeaturesSection = () => {
             <p className="text-base md:text-lg leading-[150%]">
               We will manage your data solutions by choosing the right {' '}
               <a
-                href="https://docs.pinecone.io/docs/metadata-filtering"
+                href="/"
                 className="text-black underline hover:opacity-60"
               >
                 database for you
@@ -39,30 +40,7 @@ const FeaturesSection = () => {
           </div>
 
           <div className="space-y-6 text-center lg:text-left">
-            <div className="flex h-24 w-24 mx-auto lg:mx-0 items-center justify-center bg-gray-200 rounded-full">
-              <svg
-                width="28"
-                height="29"
-                viewBox="0 0 28 29"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.125 12.1904H0.125C1.0625 5.44043 6.9375 0.19043 14 0.19043C19.0625 0.19043 23.5 2.94043 26 7.00293V3.19043V2.19043H28V3.19043V9.19043V10.1904H27.375H27H25.3125H21H20V8.19043H21H24.375C22.3125 4.62793 18.4375 2.19043 14 2.19043C8 2.19043 3.0625 6.56543 2.125 12.1904ZM14 26.1904C19.9375 26.1904 24.875 21.8779 25.8125 16.1904H27.8125C26.875 23.0029 21 28.1904 14 28.1904C8.875 28.1904 4.4375 25.5029 2 21.4404V25.1904V26.1904H0V25.1904V19.1904V18.1904H0.5625H1H2.625H7H8V20.1904H7H3.5625C5.625 23.8154 9.5 26.1904 14 26.1904Z"
-                  fill="#1C17FF"
-                />
-              </svg>
-            </div>
-            <h3 className="text-2xl font-normal md:text-[2rem] leading-[130%]">
-              Expertly Made<br />Websites
-            </h3>
-            <p className="text-base md:text-lg leading-[150%]">
-              As your online needs change, we build you a website designed for scalability, optimized for search engines, and dynamic to change with your needs.
-            </p>
-          </div>
-
-          <div className="space-y-6 text-center lg:text-left">
-            <div className="flex h-24 w-24 mx-auto lg:mx-0 items-center justify-center bg-gray-200 rounded-full">
+          <div className="flex h-24 w-24 mx-auto lg:mx-0 items-center justify-center bg-gray-200 rounded-full">
               <svg
                 width="34"
                 height="33"
@@ -76,6 +54,26 @@ const FeaturesSection = () => {
                 />
               </svg>
             </div>
+            <h3 className="text-2xl font-normal md:text-[2rem] leading-[130%]">
+              Expertly Made<br />Websites
+            </h3>
+            <p className="text-base md:text-lg leading-[150%]">
+              As your online needs change, we build you a website designed for scalability, optimized for search engines, and dynamic to change with your needs.
+            </p>
+          </div>
+
+          <div className="space-y-6 text-center lg:text-left">
+          <div className="flex h-24 w-24 mx-auto lg:mx-0 items-center justify-center bg-gray-200 rounded-full">
+    <img
+      width="34"
+      height="33"
+      viewBox="0 0 34 33"
+      src={Robot}
+      className=""
+      alt="Robot"
+    />
+  </div>
+        
             <h3 className="text-2xl font-normal md:text-[2rem] leading-[130%]">
               AI Solutions and<br />Chatbots
             </h3>
