@@ -11,11 +11,10 @@ const FooterSection = () => {
               <span className="text-body leading-[1.0625rem]">Solutions</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
                 <a href="/customers/">Customers</a>
-                <a href="/solutions/rag/">RAG</a>
-                <a href="/solutions/semantic/">Semantic Search</a>
-                <a href="/solutions/multi-modal/">Multi-Modal Search</a>
-                <a href="/solutions/candidate-generation/">Candidate Generation</a>
-                <a href="/solutions/classification/">Classification</a>
+                <a href="/solutions/websites/">Website Builds</a>
+                <a href="/solutions/ai/">AI Tools</a>
+                <a href="/solutions/databases/">Database Management</a>
+                <a href="/solutions/marketing/">Marketing Services</a>
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
@@ -23,11 +22,8 @@ const FooterSection = () => {
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
                 <a href="/learn/">Learning Center</a>
                 <a href="/community/">Community</a>
-                <a href="/blog/">Pinecone Blog</a>
-                <a href="https://support.pinecone.io/">Support Center</a>
-                <a href="https://status.pinecone.io/">System Status</a>
-                <a href="/learn/vector-database/">What is a Vector Database?</a>
-                <a href="/learn/retrieval-augmented-generation/">What is Retrieval Augmented Generation (RAG)?</a>
+                <a href="/blog/">Shoreline Blog</a>
+               
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
@@ -36,7 +32,6 @@ const FooterSection = () => {
                 <a href="/company/">About</a>
                 <a href="/partners/">Partners</a>
                 <a href="/careers/">Careers</a>
-                <a href="/newsroom/">Newsroom</a>
                 <a href="/contact/">Contact</a>
               </div>
             </div>
@@ -46,8 +41,6 @@ const FooterSection = () => {
                 <a href="/legal/">Customer Terms</a>
                 <a href="/terms/">Website Terms</a>
                 <a href="/privacy/">Privacy</a>
-                <a href="/cookies/">Cookies</a>
-                <a href="#">Cookie Preferences</a>
               </div>
             </div>
 

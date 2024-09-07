@@ -38,9 +38,9 @@ const Navbar = () => {
 
         {/* Login and Sign Up Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <Link to="/Login" className="text-gray-400 hover:text-cyan-300 transition-colors duration-200">Login</Link>
+          {/* <Link to="/Login" className="text-gray-400 hover:text-cyan-300 transition-colors duration-200">Login</Link> */}
           <Link to="/Contact" className="bg-cyan-500 text-gray-900 px-4 py-2 rounded-md hover:bg-cyan-400 transition-colors duration-200">
-            Contact
+            Connect
           </Link>
         </div>
 
