@@ -15,7 +15,7 @@ app.use(cors());
 app.use(express.json());
 
 // Serve static files from the React app (inside the 'shoreline-consulting-llc/build' folder)
-app.use(express.static(path.join(__dirname, 'shoreline-consulting-llc', 'build')));
+app.use(express.static(path.join(__dirname, '..', 'shoreline-consulting-llc', 'build')));
 
 // Send email endpoint
 app.post('/contact', async (req, res) => {
@@ -45,11 +45,11 @@ app.post('/contact', async (req, res) => {
   }
 });
 
+
 // The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'shoreline-consulting-llc', 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, '..', 'shoreline-consulting-llc', 'build', 'index.html'));
 });
-
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
