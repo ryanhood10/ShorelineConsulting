@@ -5,6 +5,10 @@ import credentialLogo4 from '../assets/credentiallogo4.png';
 import credentialLogo5 from '../assets/credentiallogo5.jpg';
 import credentialLogo6 from '../assets/credentiallogo6.png';
 import credentialLogo7 from '../assets/credentiallogo7.jpeg';
+import credentialLogo8 from '../assets/GoogleFirebaseHeaderLogo.svg';
+import credentialLogo9 from '../assets/BootstrapHeaderLogo.png';
+import credentialLogo10 from '../assets/MongodbHeaderLogo.jpg';
+import credentialLogo11 from '../assets/GoogleCloudHeaderLogo.png';
 // Add more logo imports as needed
 
 const CredentialsSection = () => {
@@ -29,6 +33,10 @@ const CredentialsSection = () => {
             <img src={credentialLogo5} alt="Credential Logo 5" className="w-36" />
             <img src={credentialLogo6} alt="Credential Logo 6" className="w-36" />
             <img src={credentialLogo7} alt="Credential Logo 7" className="w-36" />
+            <img src={credentialLogo8} alt="Credential Logo 8" className="w-36" />
+            <img src={credentialLogo9} alt="Credential Logo 9" className="w-36" />
+            <img src={credentialLogo10} alt="Credential Logo 10" className="w-36" />
+            <img src={credentialLogo11} alt="Credential Logo 11" className="w-36" />
             {/* Add more logos as needed */}
           </div>
         </div>
