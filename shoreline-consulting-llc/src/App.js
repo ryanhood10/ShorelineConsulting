@@ -12,7 +12,9 @@ import Contact from './components/Contact';
 import ContactHero from './components/ContactHero';
 import Solutions from './components/Solutions';
 import SolutionsVideo from './components/Video';
-
+import AIChatbotExplainer from './components/AIChatbotExplainer';
+import ChatbotBenefits from './components/ChatbotBenefits';
+import ProductsShowcase from './components/ProductsShowcase';
 
 
 
@@ -52,6 +54,7 @@ function App() {
                 <>
                   <Navbar />
                   <ContactHero />
+                  <ProductsShowcase/>
                   <Solutions />
                   <SolutionsVideo />
                   <Contact />
@@ -80,7 +83,20 @@ function App() {
                   <Footer />
                 </>
               }
-            />
+            /> 
+            <Route
+            path="/Solutions/ai-agents"
+            element={
+              <>
+                <Navbar />
+                <ContactHero />
+                <AIChatbotExplainer />
+                <ChatbotBenefits />
+                <FooterSection />
+                <Footer />
+              </>
+            }
+          />
             {/* <Route
               path="/Product"
               element={

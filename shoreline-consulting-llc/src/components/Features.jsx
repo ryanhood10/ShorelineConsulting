@@ -80,7 +80,7 @@ const FeaturesSection = () => {
             <p className="text-base md:text-lg leading-[150%]">
               Get 24/7 support and increase customer satisfaction with an expertly made conversation tree made by customer service savaunts, ensuring your clients always find the answer to their problem within the <span> </span>
               <a
-                href="https://docs.pinecone.io/docs/hybrid-search"
+                href="/Solutions/ai-agents"
                 className="text-black underline hover:opacity-60"
               >
                  AI Agent
