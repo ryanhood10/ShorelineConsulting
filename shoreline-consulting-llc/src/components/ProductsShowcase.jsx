@@ -6,7 +6,7 @@ const ProductsShowcase = () => {
     <section className="bg-white">
       <div className="container max-w-7xl mx-auto py-12 md:py-24 text-black px-4 sm:px-6 lg:px-8">
         <h2 className="max-w-[44.5625rem] text-3xl font-light md:text-[3.375rem] leading-[120%] mx-auto text-center md:text-left">
-          Discover Our Technology Solutions
+          Discover Leading Technology Solutions
         </h2>
         <div className="mt-12 grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 lg:mt-20 lg:grid-cols-4 lg:gap-x-12 lg:gap-y-20">
           

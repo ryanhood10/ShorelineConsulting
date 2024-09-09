@@ -53,7 +53,7 @@ const AIChatbotExplainer = () => {
 
   return (
     <>
-      <div className="p-5">
+      <div  id="ai-section" className="p-5">
         <div className="max-w-7xl mx-auto">
 
           <div className="flex flex-col md:grid md:grid-cols-3 gap-20 items-center my-12">

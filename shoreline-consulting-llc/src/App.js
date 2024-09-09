@@ -15,8 +15,8 @@ import SolutionsVideo from './components/Video';
 import AIChatbotExplainer from './components/AIChatbotExplainer';
 import ChatbotBenefits from './components/ChatbotBenefits';
 import ProductsShowcase from './components/ProductsShowcase';
-
-
+import SolutionsLeader from './components/SolutionsLeader';
+import CustomerStory from './components/CustomerStory';
 
 function App() {
   return (
@@ -44,6 +44,7 @@ function App() {
                   <Navbar />
                   <ContactHero />
                   <Contact />
+                  <FooterSection />
                   <Footer />
                 </>
               }
@@ -54,10 +55,14 @@ function App() {
                 <>
                   <Navbar />
                   <ContactHero />
+                  <SolutionsLeader/>
                   <ProductsShowcase/>
+                  <CustomerStory/>
                   <Solutions />
                   <SolutionsVideo />
+
                   <Contact />
+                  <FooterSection />
                   <Footer />
                 </>
               }
@@ -69,6 +74,7 @@ function App() {
                   <Navbar />
                   <ContactHero />
                   <Contact />
+                  <FooterSection />
                   <Footer />
                 </>
               }
@@ -80,6 +86,7 @@ function App() {
                   <Navbar />
                   <ContactHero />
                   <Contact />
+                  <FooterSection />
                   <Footer />
                 </>
               }
