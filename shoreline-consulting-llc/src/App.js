@@ -17,6 +17,11 @@ import ChatbotBenefits from './components/ChatbotBenefits';
 import ProductsShowcase from './components/ProductsShowcase';
 import SolutionsLeader from './components/SolutionsLeader';
 import CustomerStory from './components/CustomerStory';
+import WebsiteHero from './components/WebsiteHero';
+import WebsiteCTA from './components/WebsiteCTA';
+import WebsiteExamples from './components/WebsiteExamples';
+import WebsiteQA from './components/WebsiteQA';
+
 
 function App() {
   return (
@@ -104,42 +109,22 @@ function App() {
               </>
             }
           />
-            {/* <Route
-              path="/Product"
-              element={
-                <>
-                  <Navbar />
-                  <ProductHeader />
-              
-                  <Footer />
-                </>
-              }
-            />
-            <Route
-              path="/Company"
-              element={
-                <>
-                  <Navbar />
-                  <ProductHeader />
-                  <CompanyMeet />
-                  <CompanyStory />
-                  <MeetTheTeam />
-                  <FooterSection />
-                  <Footer />
-                </>
-              }
-            />
-             <Route
-              path="/Contact"
-              element={
-                <>
-                  <Navbar />
-                  <ProductHeader />
-                  <FooterSection />
-                  <Footer />
-                </>
-              }
-            /> */}
+          <Route
+          path="/Solutions/website-builds"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <WebsiteHero />
+              <WebsiteCTA/>
+              <WebsiteExamples />
+              <WebsiteQA/>
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+            
     
           </Routes>
         </Router>

@@ -4,6 +4,7 @@ import { FaEnvelope, FaComments, FaFileSignature, FaCogs, FaChartLine, FaRocket 
 
 const ChatbotBenefits = () => {
   return (
+    <div>
     <div className="bg-gray-50 py-16">
       <div className="max-w-7xl container mx-auto px-4">
         <div className="text-center mb-12">
@@ -56,7 +57,7 @@ const ChatbotBenefits = () => {
           {/* Step 5: Optimization & Upsells */}
           <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md">
             <FaChartLine className="text-blue-500 text-5xl mb-4" />
-            <h3 className="text-2xl font-semibold text-gray-800">Step 5: Ongoing Improvements & Upsells</h3>
+            <h3 className="text-2xl font-semibold text-gray-800">Step 5: Ongoing Improvements</h3>
             <p className="mt-4 text-gray-600 text-center">
               After the chatbot is live, we offer continuous support, optimization, and marketing automation options to further improve customer interactions.
             </p>
@@ -80,17 +81,21 @@ const ChatbotBenefits = () => {
 
           </div>
         </div>
-
-        {/* Example Process Image */}
-        <h2 className="text-gray-900 text-3xl font-bold mt-16">Development Roadmap</h2>
-        <div className="flex justify-center mt-8">
-          <img
-            src={ChatbotDesignProcess}
-            alt="AI Chatbot Design Process"
-            className="w-[100vh] rounded-lg shadow-lg"
-          />
         </div>
+     
       </div>
+      <div className="bg-gray-200 py-6">
+
+{/* Example Process Image */}
+<h2 className="text-gray-900 text-3xl font-bold mt-8">Development Roadmap</h2>
+<div className="flex justify-center mt-8">
+  <img
+    src={ChatbotDesignProcess}
+    alt="AI Chatbot Design Process"
+    className="w-[100vh] rounded-lg shadow-lg"
+  />
+</div>
+</div>
     </div>
   );
 };
