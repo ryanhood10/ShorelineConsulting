@@ -72,25 +72,36 @@ const SEOInfo = () => {
           </div>
         </div>
            {/* Call to Action */}
-           <div className="text-center flex mt-16">
-  {/* SEO Chart Image */}
-  <img 
-          src={Chart2} 
-          alt="SEO Performance Chart" 
-          className="mx-auto py-4 w-3/4 md:w-5/8 lg:w-1/4 mb-8 rounded-lg shadow-lg"
-        />
-     <div className='text-center align-middle justify-center'>
-          <p className="text-lg text-gray-400  mb-6">
-            Ready to optimize your website for top search engine rankings? Contact us to get started.
-          </p>
-          <a
-            href="/Contact"
-            className="bg-blue-600  hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-md transition duration-300 shadow-md"
-          >
-            Contact Us Today
-          </a>
-          </div>
-        </div>
+           <div className="flex flex-col lg:grid lg:grid-cols-3 gap-6 mt-16 items-center">
+  {/* SEO Chart Image (hidden on mobile) */}
+  <div className="hidden lg:flex lg:col-span-1 justify-center">
+    <img 
+      src={Chart2} 
+      alt="SEO Performance Chart" 
+      className="w-3/4 md:w-5/8 lg:w-full py-4 rounded-lg shadow-lg"
+    />
+  </div>
+  
+  {/* Text and Call to Action */}
+  <div className="lg:col-span-2 flex flex-col justify-center items-center text-center">
+    <p className="text-lg text-center text-gray-400 mb-6">
+      Ready to optimize your website for top search engine rankings? 
+      <br/>
+      Contact us to get started.
+    </p>
+    <div className="flex items-center justify-center w-full">
+      <a
+        href="/Contact"
+        className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-8 rounded-md transition duration-300 shadow-md"
+      >
+        Contact Us Today
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
       </div>
     </section>
   );

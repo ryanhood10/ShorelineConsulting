@@ -13,8 +13,8 @@ const FooterSection = () => {
                 <a href="/Solutions/website-builds">Website Builds</a>
                 <a href="/Solutions/ai-agents">AI Agent</a>
                 <a href="/Solutions/database-management">Database Management</a>
-                <a href="Solutions/seo-strategies">SEO </a>
-                <a href="Solutions/marketing">Marketing </a>
+                <a href="/Solutions/seo-strategies">Search Engine Optimization </a>
+                <a href="/Solutions/cro-strategies">Conversion Rate Optimization </a>
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">

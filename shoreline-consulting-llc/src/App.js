@@ -27,8 +27,13 @@ import DatabaseQA from './components/DatabaseQA';
 import SEOHero from './components/SEOHero';
 import SeoCta from './components/SeoCta';
 import SEOInfo from './components/SEOInfo';
-import SEOChart from './components/SEOChart';
-
+import SeoQA from './components/SeoQA';
+import ChatbotQA from './components/ChatbotQA';
+import CROFeatures from './components/CROFeatures';
+import CROSeller from './components/CROSeller';
+import CroQA from './components/CroQA';
+import CroCTA from './components/CroCTA';
+import CROInfo from './components/CROInfo';
 
 
 
@@ -113,6 +118,7 @@ function App() {
                 <ContactHero />
                 <AIChatbotExplainer />
                 <ChatbotBenefits />
+                <ChatbotQA />
                 <FooterSection />
                 <Footer />
               </>
@@ -142,12 +148,42 @@ function App() {
               <SEOHero/>
               <SeoCta />
               <SEOInfo />
-              <SEOChart />
+              <SeoQA />
               <FooterSection />
               <Footer />
             </>
           }
         />  
+           <Route
+          path="/Solutions/seo-strategies"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <SEOHero/>
+              <SeoCta />
+              <SEOInfo />
+              <SeoQA />
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />     <Route
+        path="/Solutions/cro-strategies"
+        element={
+          <>
+            <Navbar />
+            <ContactHero />
+            <CROFeatures/>
+            <CROSeller/>
+            <CroCTA />
+            <CROInfo />
+            <CroQA />
+            <FooterSection />
+            <Footer />
+          </>
+        }
+      />  
         <Route
           path="/Solutions/database-management"
           element={
