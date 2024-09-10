@@ -13,24 +13,24 @@ const WebsiteQA = () => {
 
   const questions = [
     {
-      question: "What does custom programming cost?",
-      answer: "The cost of custom programming varies based on the size of the project, but generally speaking, we bill at $120/hour. We always give estimates and quotes ahead of time and keep an open line of communication with our clients so they always know about any scope/cost changes before any additional work is done."
+      question: "How do you determine the cost of a project?",
+      answer: "The cost is based on the complexity and scope of the project. After discussing your needs, we’ll provide an estimate and work with you to ensure the project fits within your budget."
     },
     {
-      question: "How long does a project normally take?",
-      answer: "The time frame for each development project depends on several factors. It’s based on the size of the project, the functionality being requested, and how quickly we get responses from you when requesting resources and approvals."
+      question: "What is your development process?",
+      answer: "Our process includes an initial consultation to understand your needs, research, design, development, testing, and launch. Each phase is customized to your project’s requirements."
     },
     {
-      question: "How does the process work?",
-      answer: "For most projects, we break it down into phases: Strategy session, research & information gathering, design concepts/revisions, programming implementation, testing, and launch."
+      question: "How long does a typical project take?",
+      answer: "Project timelines vary based on complexity and functionality. We’ll provide an estimated time frame after understanding the full scope of your project."
     },
     {
-      question: "How does maintenance work?",
-      answer: "Maintenance depends on the nature of the software. Some projects may not need updates for years, while others require regular updates. We create a custom solution that fits your needs."
+      question: "Can you integrate my existing systems or tools?",
+      answer: "Yes, we specialize in building custom solutions that integrate seamlessly with your existing systems, whether it’s a CRM, API, or other third-party services."
     },
     {
-      question: "What software tools do you use?",
-      answer: "We often use WordPress due to its flexibility, but our development team has a diverse skill set and can adapt to the needs of just about any project."
+      question: "What technologies do you use?",
+      answer: "We prefer to use React for its flexibility and scalability, but we adapt to your needs and select the best technology stack for your specific project."
     }
   ];
 
@@ -38,7 +38,7 @@ const WebsiteQA = () => {
     <section className="bg-gray-900 text-white py-16 px-6 md:px-12 lg:px-24">
       {/* Section Heading */}
       <div className="text-center mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold">COMMON QUESTIONS ABOUT PROGRAMMING</h1>
+        <h1 className="text-3xl md:text-4xl font-bold">COMMON QUESTIONS ABOUT WEB DEVELOPMENT</h1>
       </div>
 
       {/* Accordion Q&A */}

@@ -21,6 +21,14 @@ import WebsiteHero from './components/WebsiteHero';
 import WebsiteCTA from './components/WebsiteCTA';
 import WebsiteExamples from './components/WebsiteExamples';
 import WebsiteQA from './components/WebsiteQA';
+import DatabaseManagement from './components/DatabaseManagement';
+import DatabaseSeller from './components/DatabaseSeller';
+import DatabaseQA from './components/DatabaseQA';
+import SEOHero from './components/SEOHero';
+import SeoCta from './components/SeoCta';
+import SEOInfo from './components/SEOInfo';
+
+
 
 
 function App() {
@@ -124,7 +132,34 @@ function App() {
             </>
           }
         />
-            
+          <Route
+          path="/Solutions/seo-strategies"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <SEOHero/>
+              <SeoCta />
+              <SEOInfo />
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />  
+        <Route
+          path="/Solutions/database-management"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <DatabaseManagement/>
+            <DatabaseSeller/>
+            <DatabaseQA />
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
     
           </Routes>
         </Router>

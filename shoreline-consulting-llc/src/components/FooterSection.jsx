@@ -10,11 +10,11 @@ const FooterSection = () => {
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
               <span className="text-body leading-[1.0625rem]">Solutions</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
-                <a href="/customers/">Customers</a>
-                <a href="/solutions/websites/">Website Builds</a>
-                <a href="/solutions/ai/">AI Tools</a>
-                <a href="/solutions/databases/">Database Management</a>
-                <a href="/solutions/marketing/">Marketing Services</a>
+                <a href="/Solutions/website-builds">Website Builds</a>
+                <a href="/Solutions/ai-agents">AI Agent</a>
+                <a href="/Solutions/database-management">Database Management</a>
+                <a href="Solutions/seo-strategies">SEO </a>
+                <a href="Solutions/marketing">Marketing </a>
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">

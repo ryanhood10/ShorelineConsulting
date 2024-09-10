@@ -3,7 +3,7 @@ import { CodeBracketIcon, Cog6ToothIcon, DevicePhoneMobileIcon } from '@heroicon
 
 const WebsiteHero = () => {
   return (
-    <div className="bg-white py-10">
+    <div className="bg-slate-200 py-16">
       <div className="container mx-auto">
         {/* Heading Section */}
         <div className="text-center mb-8">

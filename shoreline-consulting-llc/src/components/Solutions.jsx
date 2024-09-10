@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import AIHero from "../assets/AIHero.webp";
 import WebDesignHero from "../assets/WebDesignHero.webp";
 import DatabaseManagementHero from "../assets/DatabaseManagementHero.webp";
@@ -38,7 +37,6 @@ function useVisibility(initialVisibility = false) {
 }
 
 const Solutions = () => {
-  const navigate = useNavigate();
 
   // Separate visibility hooks for each section
   const [aiRef, aiVisible] = useVisibility();
@@ -53,6 +51,7 @@ const Solutions = () => {
 
   return (
     <>
+    <div>
       <div className="p-5">
         <div className="max-w-7xl mx-auto">
           {/* Customized AI Chatbots section */}
@@ -130,9 +129,16 @@ const Solutions = () => {
               </div>
             </div>
           </div>
-
+          </div>
           {/* Database Management section */}
-          <div className="flex flex-col md:grid md:grid-cols-2 gap-20 items-center my-12">
+       
+        </div>
+
+
+<div className="bg-slate-200 p-5">
+        <div className="max-w-7xl mx-auto ">
+
+   <div className=" flex flex-col md:grid md:grid-cols-2 gap-20 items-center my-12">
             <img
               ref={databaseRef}
               className={`rounded-xl md:order-2 ${animationClasses(databaseVisible)} mx-auto`}
@@ -151,7 +157,7 @@ const Solutions = () => {
               {/* Buttons */}
               <div className="flex flex-col space-y-4 text-sm lg:text-base md:flex-row md:space-x-6 md:space-y-0">
                 <a
-                  href="/Solutions/ai-agents"
+                  href="/Solutions/database-management"
                   className="border border-gray-400 text-gray-600 text-sm rounded-md font-medium py-3 px-6 hover:border-purple-500 hover:text-purple-500 transition duration-300"
                 >
                   Learn More about our Database Management Systems
@@ -193,7 +199,7 @@ const Solutions = () => {
                   Contact Us
                 </a>
                 <a
-                  href="/Solutions/ai-agents"
+                  href="/Solutions/seo-strategies"
                   className="border border-gray-400 text-gray-600 rounded-md font-medium py-3 px-6 hover:border-blue-500 hover:text-blue-500 transition duration-300"
                 >
                   Learn More About Our SEO Strategies
@@ -201,6 +207,7 @@ const Solutions = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

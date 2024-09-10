@@ -4,30 +4,28 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import AppPic1 from '../assets/background2.png'
 import BondsWebsite from '../assets/BondsWebsite.png';
 import btcBayWebsite from '../assets/btcBayWebsite.png'
-
+import ModelApp from '../assets/3DModelApp.png';
 
 
 const WebsiteExamples = () => {
-  const link = '/Solutions/website-builds/showcase'; // Single link for all cards
 
   const recentWorks = [
     {
       title: 'Website | Bonds Southeast Inc.',
       image: BondsWebsite,
-      link: link,
+      link: "https://bondssoutheast.com/"
     },
     {
       title: 'App | Bitcoin Bay',
       image: btcBayWebsite,
-      link: link,
+      link: "https://www.bitcoinbay.com/",
     },
     {
-      title: 'App | MyCommission',
-      image: AppPic1,
-      link: link,
+      title: 'App | AI 3D Model Maker',
+      image: ModelApp,
+      link: "https://ai-3d-model-maker-6bb8a109b792.herokuapp.com/",
     },
   ];
 
@@ -36,7 +34,7 @@ const WebsiteExamples = () => {
       {/* Section Heading */}
       <div className="text-center mb-8">
         <h4 className="text-xl md:text-2xl font-semibold mb-2">
-          RECENT PROGRAMMING SAMPLES |{' '}
+          RECENT EXAMPLES |{' '}
           <a
             href="/Solutions/website-builds/showcase"
             className="font-bold text-blue-500 hover:underline"
