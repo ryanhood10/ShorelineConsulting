@@ -27,6 +27,7 @@ import DatabaseQA from './components/DatabaseQA';
 import SEOHero from './components/SEOHero';
 import SeoCta from './components/SeoCta';
 import SEOInfo from './components/SEOInfo';
+import SEOChart from './components/SEOChart';
 
 
 
@@ -141,6 +142,7 @@ function App() {
               <SEOHero/>
               <SeoCta />
               <SEOInfo />
+              <SEOChart />
               <FooterSection />
               <Footer />
             </>
