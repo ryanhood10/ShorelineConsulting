@@ -35,6 +35,7 @@ import CroQA from './components/CroQA';
 import CroCTA from './components/CroCTA';
 import CROInfo from './components/CROInfo';
 import LearningCenter from './components/LearningCenter';
+import LearnSolutions from './components/LearnSolutions';
 
 
 
@@ -94,6 +95,7 @@ function App() {
                   <Navbar />
                   <ContactHero />
                   <LearningCenter />
+                  <LearnSolutions />
                   <Contact />
                   <FooterSection />
                   <Footer />

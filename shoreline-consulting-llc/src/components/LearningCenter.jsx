@@ -1,7 +1,7 @@
 import React from 'react';
 import Chart2 from '../assets/Globe.png'; // Assuming you have this image in your assets
 import BlogPoster from '../assets/HitchHikerBlog.webp';
-
+import CertBlog from '../assets/CertBlog.webp';
 
 const LearningCenter = () => {
   return (
@@ -13,7 +13,7 @@ const LearningCenter = () => {
                 LEARNING CENTER     
      </h1>
           <h4 className="text-lg lg:text-xl text-gray-600 mt-4">
-            BLOG POSTS | DOCS | NEWS
+            BLOG POSTS | DOCS | STAY CONNECTED
           </h4>
           <hr className="mt-8 w-full border-t-2 border-gray-300" />
         </div>
@@ -27,14 +27,16 @@ const LearningCenter = () => {
           <div className="md:w-1/3">
             <p className="text-black font-semibold mb-2">BLOG</p>
             <h2 className="text-2xl font-bold text-black mb-4">
-           Crafting a Website that Truly sets your Business Foundation.
+           Crafting an Online Presence that sets your Business Foundation.
             </h2>
             <p className="text-gray-800 mb-6">
-              Key strategies for online Success: Perfect & Practical Tools
+              Key strategies for online Success: 
+              <br/>
+              Perfect & Practical Tools
             </p>
             <a
-              href="https://prophet.com/2024/06/uncommon-growth-strategies/"
-              className="text-blue-600 font-semibold hover:underline"
+                href="/Blog"
+                className="text-blue-600 font-semibold hover:underline"
             >
               READ HERE
             </a>
@@ -63,7 +65,7 @@ const LearningCenter = () => {
             {/* Post 1 */}
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <a
-                href="https://prophet.com/2023/12/2024-cmo-trends/"
+                href="/Blog"
                 className="block"
                 target="_self"
               >
@@ -79,7 +81,7 @@ const LearningCenter = () => {
                     Blog
                   </p>
                   <h3 className="text-xl font-semibold">
-                  A Hitchhikers Guide to Selecting the Right Database Solution.
+                  A Hitchhikers Guide to Selecting the Right Database Solution
                   </h3>
                 </div>
               </a>
@@ -88,14 +90,16 @@ const LearningCenter = () => {
             {/* Post 2 */}
             <div className="bg-white shadow-md rounded-lg overflow-hidden">
               <a
-                href="https://prophet.com/2023/12/2023-brand-winners-and-losers/"
+                href="/Blog"
                 className="block"
                 target="_self"
               >
                 <div
                   className="bg-cover bg-center h-48"
                   style={{
-                    backgroundImage: `url(https://prophet.com/wp-content/uploads/2023/12/Award_4A-1493x800.png)`,
+                    // backgroundImage: `url(https://prophet.com/wp-content/uploads/2023/12/Award_4A-1493x800.png)`,
+                    backgroundImage: `url(${CertBlog})`,
+
                   }}
                 ></div>
                 <div className="p-4">
@@ -103,8 +107,8 @@ const LearningCenter = () => {
                     Blog
                   </p>
                   <h3 className="text-xl font-semibold">
-                    2023 Brand Winners and Losers
-                  </h3>
+                  Certified Winners: Our New Favorite AI Tools
+                               </h3>
                 </div>
               </a>
             </div>
@@ -115,10 +119,10 @@ const LearningCenter = () => {
         {/* View All Button */}
         <div className="text-center">
           <a
-            href="https://prophet.com/thinking/all-posts/"
+            href="/Blog"
             className="text-black font-semibold hover:underline inline-flex items-center gap-2"
           >
-            VIEW ALL THINKING
+            VIEW ALL BLOG POSTS
             <svg
               className="w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"
