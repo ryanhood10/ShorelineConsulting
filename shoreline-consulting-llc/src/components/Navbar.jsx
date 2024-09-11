@@ -29,10 +29,10 @@ const Navbar = () => {
             >Shoreline Consulting</span>
           </Link>
           <nav className="hidden md:flex space-x-6 pl-8">
-            <Link to="/Solutions" className="hover:text-cyan-300 transition-colors duration-200">Solutions</Link>
-            <Link to="/Pricing" className="hover:text-cyan-300 transition-colors duration-200">Pricing</Link>
-            {/* <Link to="/Docs" className="hover:text-cyan-300 transition-colors duration-200">Docs</Link> */}
             <Link to="/Company" className="hover:text-cyan-300 transition-colors duration-200">Company</Link>
+            <Link to="/Learn" className="hover:text-cyan-300 transition-colors duration-200">Learn</Link>
+            <Link to="/Solutions" className="hover:text-cyan-300 transition-colors duration-200">Solutions</Link>
+            {/* <Link to="/Docs" className="hover:text-cyan-300 transition-colors duration-200">Docs</Link> */}
           </nav>
         </div>
 
@@ -99,27 +99,28 @@ const Navbar = () => {
               </svg>
             </button>
             <Link
-              to="/Solutions"
-              className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
-              onClick={closeMobileMenu}
-            >
-              Solutions
-            </Link>
-            <Link
-              to="/Pricing"
-              className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
-              onClick={closeMobileMenu}
-            >
-              Pricing
-            </Link>
-          
-            <Link
               to="/Company"
               className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
               onClick={closeMobileMenu}
             >
               Company
             </Link>
+            
+            <Link
+              to="/Learn"
+              className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
+              onClick={closeMobileMenu}
+            >
+              Learn
+            </Link>
+            <Link
+              to="/Solutions"
+              className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
+              onClick={closeMobileMenu}
+            >
+              Solutions
+            </Link>
+           
             <Link
               to="/Login"
               className="block text-gray-400 hover:text-cyan-300 py-2 transition-colors duration-200"

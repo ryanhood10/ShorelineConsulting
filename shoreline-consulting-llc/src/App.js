@@ -34,6 +34,7 @@ import CROSeller from './components/CROSeller';
 import CroQA from './components/CroQA';
 import CroCTA from './components/CroCTA';
 import CROInfo from './components/CROInfo';
+import LearningCenter from './components/LearningCenter';
 
 
 
@@ -87,11 +88,12 @@ function App() {
               }
             />
           <Route
-              path="/Pricing"
+              path="/Learn"
               element={
                 <>
                   <Navbar />
                   <ContactHero />
+                  <LearningCenter />
                   <Contact />
                   <FooterSection />
                   <Footer />

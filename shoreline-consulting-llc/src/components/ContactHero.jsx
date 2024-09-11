@@ -12,8 +12,8 @@ const ContactHero = () => {
         return 'Contact Us';
       case '/Solutions':
         return 'Our Solutions';
-      case '/Pricing':
-        return 'Let’s Talk Pricing';
+      case '/Learn':
+        return 'Learn';
       case '/Company':
         return 'About Us';
       default:
