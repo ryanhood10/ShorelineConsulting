@@ -2,7 +2,7 @@ import React from 'react';
 
 const CompanyServices = () => {
   return (
-    <section className="bg-gray-100 py-12">
+    <section className="bg-slate-50 py-12">
       <div className="container mx-auto px-4">
         {/* Section Heading */}
         <div className="text-center mb-8">
@@ -14,48 +14,47 @@ const CompanyServices = () => {
         {/* Section Paragraph */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-lg text-gray-700 leading-relaxed">
-            From our flagship products for enterprise{' '}
-            <a
-              href="https://www.ibm.com/hybrid-cloud?lnk=hpUSbt1"
-              className="text-blue-600 hover:text-blue-800"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              hybrid cloud infrastructure
-            </a>{' '}
-            to next-generation AI, security, and storage solutions, find the
-            answer to your business challenge, and engage{' '}
-            <a
-              href="https://www.ibm.com/consulting"
-              className="text-blue-600 hover:text-blue-800"
-              target="_self"
-              rel="noopener noreferrer"
-            >
-              IBM Consulting
-            </a>{' '}
-            to scale transformation and reinvent how your business works with
-            AI.
+            Shoreline offers cutting-edge solutions to help businesses grow 
+            and thrive in the digital world. From AI-driven chatbots and expert 
+            website designs to secure database management and customized SEO strategies, 
+            we provide the tools and services to meet your unique business needs.
           </p>
         </div>
 
         {/* Call to Action Links */}
         <div className="max-w-lg mx-auto space-y-6">
           <a
-            href="https://www.ibm.com/products/offers-and-discounts?lnk=hpUSbt1"
+            href="/Solutions/ai-agents"
             className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition duration-300"
-            target="_self"
-            rel="noopener noreferrer"
           >
-            Save on select IBM products today
+            Learn More about our AI Chatbots
           </a>
 
           <a
-            href="https://www.ibm.com/products?lnk=hpUSbt2"
+            href="/Solutions/website-builds"
             className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition duration-300"
-            target="_self"
-            rel="noopener noreferrer"
           >
-            View all products
+            Learn More about our Website Builds
+          </a>
+
+          <a
+            href="/Solutions/database-management"
+            className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition duration-300"
+          >
+            Learn More about our Database Management Systems
+          </a>
+
+          <a
+            href="/Soltions/seo-strategies"
+            className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition duration-300"
+          >
+            Learn More about our SEO Strategies
+          </a>
+          <a
+            href="/Soltions/cro-strategies"
+            className="block text-center bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-md transition duration-300"
+          >
+            Learn More about our CRO Solutions
           </a>
         </div>
       </div>

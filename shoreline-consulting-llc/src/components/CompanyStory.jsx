@@ -6,38 +6,27 @@ const CompanyStory = () => {
       <div className="container mx-auto py-12 lg:py-16 px-4">
         {/* Title */}
         <h2 className="text-center text-3xl lg:text-4xl font-light text-navy">
-          Origin Story
+          Our Story
         </h2>
 
         {/* Story Content */}
         <div className="mt-8 lg:mt-12 flex flex-col gap-6 text-sm md:text-base text-gray-600 lg:gap-8">
           <p>
-            Pinecone was founded in 2019 by Edo Liberty. As a research director
-            at AWS and at Yahoo! before that, Edo saw the tremendous power of
-            combining AI models and vector search to dramatically improve
-            applications such as spam detectors and recommendation systems.
+            Shoreline was founded in 2020 by University of Tennessee graduate David Hood. 
+            With previous work in SaaS, David witnessed breakthroughs in AI and automation 
+            and was inspired to help everyday businesses apply these technologies to increase 
+            their profits and productivity.
           </p>
           <p>
-            While he was working on custom vector search systems at enormous
-            scales, he assumed there was already a packaged solution out there
-            for everyone else who didn’t have the same engineering and
-            data-science resources available. To his surprise, there wasn’t.
-            Thus Pinecone and the{' '}
-            <a
-              href="/learn/vector-database/"
-              className="text-blue-500 transition-colors duration-300 hover:text-blue-400"
-            >
-              vector database
-            </a>{' '}
-            category of solutions was born.
+            Teaming up with online marketing experts and gathering a talented group of software developers, 
+            Shoreline embarked on a mission to empower companies with the latest in digital solutions. 
+            From creating cutting-edge websites to managing complex databases and enhancing SEO strategies, 
+            we are dedicated to driving growth and success for our clients.
           </p>
           <p>
-            Pinecone was created to provide the critical storage and retrieval
-            infrastructure needed for building and running state-of-the-art AI
-            applications. The founding principle was to make the solution
-            accessible to engineering teams of all sizes and levels of AI
-            expertise, which led to the fully managed service and ease of use
-            that Pinecone is known for today.
+            Shoreline continues to evolve, helping businesses unlock new opportunities by leveraging 
+            AI, automation, and tailored marketing strategies to improve customer engagement, streamline 
+            operations, and increase overall sales.
           </p>
         </div>
       </div>

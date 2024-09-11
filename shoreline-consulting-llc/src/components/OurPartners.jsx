@@ -9,41 +9,21 @@ import PMTsiteLogo from '../assets/partnerLogos/PMTLogo.png';
 import NashTrash from '../assets/partnerLogos/TrashHaulLogo.png';
 import IBMLogo from '../assets/partnerLogos/IBMLogo.png';
 import ShopLogo from '../assets/partnerLogos/ShopifyPartnerLogo.png';
+import ShorelineLogo from '../assets/PalmTreeTransparent.png';
 
 const partnerLogos = [
-    BondsSouthEastIncLogo,
-    CreativeColoringLogo,
-    FuzzEraserLogo,
-    VincentPeachLogo,
-    KroegerRealEstateLogo, IBMLogo,
-    PMTsiteLogo,
-    BitcoinBayLogo, BondsSouthEastIncLogo, ShopLogo,
-    CreativeColoringLogo,
-    NashTrash,
-    FuzzEraserLogo,
-    VincentPeachLogo,
-    KroegerRealEstateLogo,IBMLogo,
-    PMTsiteLogo,
-    BitcoinBayLogo, BondsSouthEastIncLogo, ShopLogo,
-    CreativeColoringLogo,    NashTrash,
-    FuzzEraserLogo,
-    VincentPeachLogo,
-    KroegerRealEstateLogo,IBMLogo,
-    PMTsiteLogo,
-    BitcoinBayLogo, BondsSouthEastIncLogo, ShopLogo,
-    CreativeColoringLogo, NashTrash,
-    FuzzEraserLogo,
-    VincentPeachLogo,
-    KroegerRealEstateLogo, IBMLogo,
-    PMTsiteLogo,
-    BitcoinBayLogo, BondsSouthEastIncLogo, ShopLogo,
-    CreativeColoringLogo, NashTrash,
-    FuzzEraserLogo,
-    VincentPeachLogo,
-    KroegerRealEstateLogo, IBMLogo,
-    PMTsiteLogo,
-    BitcoinBayLogo,
+  BondsSouthEastIncLogo,
+  CreativeColoringLogo,
+  FuzzEraserLogo,
+  VincentPeachLogo,
+  KroegerRealEstateLogo,
+  IBMLogo,
+  PMTsiteLogo,
+  BitcoinBayLogo,
+  ShopLogo,
+  NashTrash,
 ];
+
 const CompanyPartners = () => {
   const carouselRef = useRef(null);
 
@@ -57,24 +37,32 @@ const CompanyPartners = () => {
 
   return (
     <div className="p-8 w-full bg-slate-200 text-center">
-        <h3 className='pb-4 text-2xl font-semibold'>Our Partners</h3>
-    <div className="flex justify-center overflow-hidden  h-120px">
+      {/* Flex container for logo and text */}
+      <div className="flex items-center justify-center pb-4">
+        {/* Shoreline logo with increased size */}
+        <img src={ShorelineLogo} alt="Shoreline Logo" className="h-16 w-20 md:h-20 md:w-24 mr-4" />
+        {/* Partners text */}
+        <h3 className="text-2xl font-semibold">Our Partners</h3>
+        <img src={ShorelineLogo} alt="Shoreline Logo" className="h-16 w-20 md:h-20 md:w-24 ml-4 transform scale-x-[-1]" />
+      </div>
 
-      <div ref={carouselRef}
-       className="flex overflow-hidden w-[80%]"       
-        style={{ scrollBehavior: 'smooth' }}>
-        {partnerLogos.map((logo, index) => (
-          <img
-            key={index}
-            src={logo}
-            alt={`Partner Logo ${index}`}
-            className="h-full max-h-16 mx-4"
-          />
-        ))}
+      <div className="relative flex justify-center overflow-hidden h-24">
+        <div
+          ref={carouselRef}
+          className="flex w-full space-x-8 overflow-hidden animate-scroll"
+          style={{ scrollBehavior: 'smooth' }}
+        >
+          {partnerLogos.map((logo, index) => (
+            <img
+              key={index}
+              src={logo}
+              alt={`Partner Logo ${index}`}
+              className="h-full max-h-16 mx-4 transition-transform duration-300 hover:scale-105"
+            />
+          ))}
+        </div>
       </div>
     </div>
-    </div>
-
   );
 };
 
