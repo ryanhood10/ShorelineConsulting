@@ -1,7 +1,7 @@
 import React from 'react';
 import GrahamNash from '../assets/usericon.png'; // Path to the image
 import RyanSeaver from '../assets/usericon.png'; // Path to the image
-import BondsLogo from '../assets/BondsSouthLogo.png'; // Path to the logo
+import BondsLogo from '../assets/partnerLogos/BondsSouthLogo.png'; // Path to the logo
 import SherlockLogo from '../assets/SherlockSocialLogo.png'; // Path to the logo
 
 const CustomerStory = () => {

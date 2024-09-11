@@ -37,6 +37,10 @@ import CROInfo from './components/CROInfo';
 import LearningCenter from './components/LearningCenter';
 import LearnSolutions from './components/LearnSolutions';
 import ConnectWithUs from './components/ConnectWithUs';
+import CompanyServices from './components/CompanyServices';
+import CompanyMeet from './components/CompanyMeet';
+import CompanyStory from './components/CompanyStory';
+import CompanyPartners from './components/OurPartners';
 
 
 
@@ -109,6 +113,11 @@ function App() {
                 <>
                   <Navbar />
                   <ContactHero />
+                  <CompanyMeet />
+                  <CompanyStory />
+                  <CompanyPartners />
+                  <CompanyServices />
+                  
                   <Contact />
                   <FooterSection />
                   <Footer />
