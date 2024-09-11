@@ -36,6 +36,7 @@ import CroCTA from './components/CroCTA';
 import CROInfo from './components/CROInfo';
 import LearningCenter from './components/LearningCenter';
 import LearnSolutions from './components/LearnSolutions';
+import ConnectWithUs from './components/ConnectWithUs';
 
 
 
@@ -96,7 +97,7 @@ function App() {
                   <ContactHero />
                   <LearningCenter />
                   <LearnSolutions />
-                  <Contact />
+                  <ConnectWithUs />
                   <FooterSection />
                   <Footer />
                 </>
