@@ -149,11 +149,13 @@ const PortfolioHome = () => {
         <div className="text-center mb-8">
           <p className="mt-4 text-lg text-gray-700 leading-relaxed">Explore our work across various domains, including Websites, Web Apps, E-Commerce, SEO, Databases, and AI Projects.</p>
         </div>
+        <hr className="pb-8 w-full border-t-2 border-gray-300 " />
 
         {/* Categories */}
         {Object.keys(categorizedProjects).map((category) => (
           <div key={category} className="mb-12">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">{category}</h3>
+            <hr className="pb-8 w-full border-t-2 border-gray-300 " />
 
             {/* Carousel */}
             <div className="relative px-8">
@@ -223,7 +225,10 @@ const PortfolioHome = () => {
             </div>
           </div>
         )}
+                <hr className="pb-8 w-full border-t-2 border-gray-300 " />
+
       </div>
+
     </section>
   );
 };
