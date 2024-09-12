@@ -20,19 +20,19 @@ const FooterSection = () => {
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
               <span className="text-body leading-[1.0625rem]">Resources</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
-                <a href="/learn/">Learning Center</a>
-                <a href="/docs/">Documents</a>
-                <a href="/blog/">Blog Posts</a>
+                <a href="/Learn">Learning Center</a>
+                <a href="/docs/home">Documents</a>
+                <a href="/Blog">Blog Posts</a>
                
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
               <span className="text-body leading-[1.0625rem]">Company</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
-                <a href="/company/">About</a>
+                <a href="/Company">About</a>
                 <a href="/partners/">Partners</a>
-                <a href="/careers/">Careers</a>
-                <a href="/contact/">Contact</a>
+                <a href="/careers/home">Careers</a>
+                <a href="/Contact">Contact</a>
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">

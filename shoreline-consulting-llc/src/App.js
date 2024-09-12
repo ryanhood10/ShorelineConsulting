@@ -41,6 +41,9 @@ import CompanyServices from './components/CompanyServices';
 import CompanyMeet from './components/CompanyMeet';
 import CompanyStory from './components/CompanyStory';
 import CompanyPartners from './components/OurPartners';
+import CareersPage from './components/CareersPage';
+import BlogPostHomepage from './components/BlogPostHomepage';
+import BlogSubscription from './components/BlogSubscription';
 
 
 
@@ -124,6 +127,19 @@ function App() {
                 </>
               }
             /> 
+             <Route
+          path="/Blog"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <BlogSubscription />     
+              <BlogPostHomepage />     
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
             <Route
             path="/Solutions/ai-agents"
             element={
@@ -212,7 +228,19 @@ function App() {
             </>
           }
         />
-    
+       <Route
+          path="/careers/home"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <CareersPage/>
+            
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
           </Routes>
         </Router>
       </div>
