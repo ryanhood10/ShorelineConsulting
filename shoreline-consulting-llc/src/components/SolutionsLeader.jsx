@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import StampLogo from "../assets/stamp2logo.webp";
 
 function useVisible(initialVisibility = false) {

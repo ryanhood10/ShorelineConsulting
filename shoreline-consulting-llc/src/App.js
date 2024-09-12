@@ -44,6 +44,7 @@ import CompanyPartners from './components/OurPartners';
 import CareersPage from './components/CareersPage';
 import BlogPostHomepage from './components/BlogPostHomepage';
 import BlogSubscription from './components/BlogSubscription';
+import PortfolioHome from './components/PortfolioHome';
 
 
 
@@ -134,7 +135,21 @@ function App() {
               <Navbar />
               <ContactHero />
               <BlogSubscription />     
-              <BlogPostHomepage />     
+              <BlogPostHomepage />   
+              <ConnectWithUs/>  
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/Portfolio"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <PortfolioHome />     
+              <ConnectWithUs/>
               <FooterSection />
               <Footer />
             </>

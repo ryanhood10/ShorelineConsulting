@@ -50,7 +50,7 @@ const CodeExamples = () => {
             <p className={activeText === 2 ? 'visible' : 'hidden'}>{texts[2]}</p>
           </div>
           <a
-            href="https://docs.pinecone.io/docs/quickstart"
+            href="/Contact"
             className="mt-6 inline-block underline underline-offset-2 hover:text-cyan-500 md:mt-[2.625rem]"
           >
             Contact Us &gt;

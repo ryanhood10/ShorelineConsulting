@@ -36,7 +36,7 @@ const CompanyMeet = () => {
           <div className="grid grid-cols-1 gap-1">
             <img
               src={TeamPicture}
-              alt="Pinecone team"
+              alt="Shoreline team"
               className="w-full h-full object-cover"
               loading="lazy"
               decoding="async"

@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate } from "react-router-dom";
 import ChatGPTLogo from '../assets/chatgptlogo2.png';
 import IBMLogo from '../assets/credentiallogo2.webp';
-import ChatbotImage from '../assets/flowchart.webp'; // Adjust the path to the actual image file location
 
 function useVisible(initialVisibility = false) {
   const [isVisible, setIsVisible] = useState(initialVisibility);
@@ -36,7 +34,6 @@ function useVisible(initialVisibility = false) {
 }
 
 const AIChatbotExplainer = () => {
-  const navigate = useNavigate();
   const [emailDivRef, emailDivVisible] = useVisible();
   const [openSection, setOpenSection] = useState(null);
 
