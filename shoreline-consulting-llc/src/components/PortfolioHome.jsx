@@ -15,7 +15,7 @@ import ModelMaker from '../assets/websitePics/3DModelSite.png';
 import CreativeColoringSite from '../assets/websitePics/CreativeColoring.png';
 import VincentPeachSite from '../assets/websitePics/VincentPeachSite.png';
 import ShopifyConversion from '../assets/websitePics/ShopifyConversion5.png';
-
+import GoogleA from '../assets/websitePics/GoogleA4.png'
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -44,7 +44,7 @@ const PortfolioHome = () => {
 
   // Portfolio projects data categorized
   const categorizedProjects = {
-    Websites: [
+    'Landing Pages': [
       {
         title: 'Bonds Southeast Inc',
         description: 'A modern website that reduces friction in the bonds industry',
@@ -83,7 +83,7 @@ const PortfolioHome = () => {
         details: `Performance optimized, Subscription Service Ready. Let us be the launch pad to ensure your Saas Product reaches its potential. You can focus on your application, we will handle the rest!`,
       },
       {
-        title: 'BitcoinBay',
+        title: 'Bitcoin Bay',
         description: 'An optimized website fully equipped with customer tools for success.',
         image: btcBayWebsite,
         date: '2023',
@@ -93,7 +93,7 @@ const PortfolioHome = () => {
     'E-Commerce': [
       {
         title: 'Creative Coloring',
-        description: 'A seamless e-commerce experience',
+        description: 'An expressive e-commerce website',
         image: CreativeColoringSite,
         date: 'March 2, 2023',
         details: 'We developed a platform using secure payment gateways and fast loading times.',
@@ -108,9 +108,16 @@ const PortfolioHome = () => {
     ],
     'CRO & SEO': [
       {
+        title: 'Product Listing SEO & CRO',
+        description: 'Improving Google Ranking through AI natural language & relevant key word tags',
+        image: ShopifyConversion,
+        date: 'January 10, 2023',
+        details: 'We improved our client\'s search engine ranking through comprehensive SEO strategies.',
+      },
+      {
         title: 'SEO Boost Strategy',
         description: 'Improving ranking through SEO best practices',
-        image: ShopifyConversion,
+        image: GoogleA,
         date: 'January 10, 2023',
         details: 'We improved our client\'s search engine ranking through comprehensive SEO strategies.',
       },
