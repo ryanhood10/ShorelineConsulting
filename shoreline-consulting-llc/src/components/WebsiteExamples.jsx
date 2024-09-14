@@ -5,7 +5,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
 import BondsWebsite from '../assets/BondsWebsite.png';
-import btcBayWebsite from '../assets/btcBayWebsite.png'
+import btcBayWebsite from '../assets/websitePics/btcBayWebsite.png'
 import ModelApp from '../assets/3DModelApp.png';
 
 
