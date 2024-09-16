@@ -45,7 +45,7 @@ import CareersPage from './components/CareersPage';
 import BlogPostHomepage from './components/BlogPostHomepage';
 import BlogSubscription from './components/BlogSubscription';
 import PortfolioHome from './components/PortfolioHome';
-
+import ChatbotDocument from './components/DocumentPages/ChatbotFeaturesDoc';
 
 
 function App() {
@@ -250,6 +250,19 @@ function App() {
               <Navbar />
               <ContactHero />
             <CareersPage/>
+            
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/docs/ai-agents/features"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <ChatbotDocument/>
             
               <FooterSection />
               <Footer />
