@@ -46,6 +46,7 @@ import BlogPostHomepage from './components/BlogPostHomepage';
 import BlogSubscription from './components/BlogSubscription';
 import PortfolioHome from './components/PortfolioHome';
 import ChatbotDocument from './components/DocumentPages/ChatbotFeaturesDoc';
+import WebsiteBuildsDoc from './components/DocumentPages/WebsiteBuildsDoc';
 
 
 function App() {
@@ -257,13 +258,24 @@ function App() {
           }
         />
          <Route
-          path="/docs/ai-agents/features"
+          path="/docs/ai-agents"
           element={
             <>
               <Navbar />
               <ContactHero />
             <ChatbotDocument/>
-            
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/docs/website-builds"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <WebsiteBuildsDoc/>
               <FooterSection />
               <Footer />
             </>
