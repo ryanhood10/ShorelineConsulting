@@ -214,7 +214,7 @@ const LearnSolutions = () => {
 
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/cro/strategies"
+              href="/docs/cro"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />

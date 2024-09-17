@@ -21,7 +21,7 @@ const FooterSection = () => {
               <span className="text-body leading-[1.0625rem]">Resources</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
                 <a href="/Learn">Learning Center</a>
-                <a href="/docs/home">Documents</a>
+                <a href="/docs">Documents</a>
                 <a href="/Blog">Blog Posts</a>
                
               </div>

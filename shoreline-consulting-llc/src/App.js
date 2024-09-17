@@ -50,6 +50,7 @@ import WebsiteBuildsDoc from './components/DocumentPages/WebsiteBuildsDoc';
 import DatabaseManagementDoc from './components/DocumentPages/DatabaseManagementDoc';
 import SEODoc from './components/DocumentPages/SEODoc';
 import CRODoc from './components/DocumentPages/CRODoc';
+import DocumentsHomepage from './components/DocumentPages/DocumentsHomepage';
 
 
 function App() {
@@ -255,6 +256,18 @@ function App() {
               <ContactHero />
             <CareersPage/>
             
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/docs"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <DocumentsHomepage/>
               <FooterSection />
               <Footer />
             </>
