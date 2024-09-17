@@ -1,7 +1,7 @@
 import React from "react";
-import Picture1 from '../../assets/DocumentPictures/ChatbotLandscape1.webp';
-import Picture2 from '../../assets/DocumentPictures/ChatbotLandscape2.webp';
-import Picture3 from '../../assets/DocumentPictures/ChatbotLandscape3.webp';
+import Picture1 from '../../assets/DocumentPictures/WebsiteBuildsLandscape1.webp';
+import Picture2 from '../../assets/DocumentPictures/WebsiteBuildsLandscape2.webp';
+import Picture3 from '../../assets/DocumentPictures/WebsiteBuildsLandscape3.webp';
 
 const WebsiteBuildsDoc = () => {
   return (

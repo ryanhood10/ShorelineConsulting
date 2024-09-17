@@ -47,6 +47,9 @@ import BlogSubscription from './components/BlogSubscription';
 import PortfolioHome from './components/PortfolioHome';
 import ChatbotDocument from './components/DocumentPages/ChatbotFeaturesDoc';
 import WebsiteBuildsDoc from './components/DocumentPages/WebsiteBuildsDoc';
+import DatabaseManagementDoc from './components/DocumentPages/DatabaseManagementDoc';
+import SEODoc from './components/DocumentPages/SEODoc';
+import CRODoc from './components/DocumentPages/CRODoc';
 
 
 function App() {
@@ -201,7 +204,7 @@ function App() {
           }
         />  
            <Route
-          path="/Solutions/seo-strategies"
+          path="/Solutions/seo"
           element={
             <>
               <Navbar />
@@ -264,6 +267,7 @@ function App() {
               <Navbar />
               <ContactHero />
             <ChatbotDocument/>
+            <ChatbotQA/>
               <FooterSection />
               <Footer />
             </>
@@ -276,6 +280,46 @@ function App() {
               <Navbar />
               <ContactHero />
             <WebsiteBuildsDoc/>
+            <WebsiteQA/>
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+            <Route
+          path="/docs/database-management"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <DatabaseManagementDoc/>
+            <DatabaseQA/>
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+          <Route
+          path="/docs/seo"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <SEODoc/>
+            <SeoQA/>
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/docs/cro"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+            <CRODoc/>
+            <CroQA/>
               <FooterSection />
               <Footer />
             </>

@@ -121,7 +121,7 @@ const LearnSolutions = () => {
         <div className="flex flex-col lg:flex-row justify-around items-center lg:space-x-4 space-y-6 lg:space-y-0">
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/databases/database-selection"
+              href="/docs/database-management"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />
@@ -138,7 +138,7 @@ const LearnSolutions = () => {
 
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/databases/management-interfaces"
+              href="/docs/database-management"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />
@@ -159,7 +159,7 @@ const LearnSolutions = () => {
         <div className="flex flex-col lg:flex-row justify-around items-center lg:space-x-4 space-y-6 lg:space-y-0">
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/seo/what-is-seo"
+              href="/docs/seo"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />
@@ -176,7 +176,7 @@ const LearnSolutions = () => {
 
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/seo/tools-and-strategies"
+              href="/docs/seo"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />
@@ -197,7 +197,7 @@ const LearnSolutions = () => {
         <div className="flex flex-col lg:flex-row justify-around items-center lg:space-x-4 space-y-6 lg:space-y-0">
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/cro/what-is-cro"
+              href="/docs/cro"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />
