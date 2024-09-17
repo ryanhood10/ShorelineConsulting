@@ -52,6 +52,7 @@ import SEODoc from './components/DocumentPages/SEODoc';
 import CRODoc from './components/DocumentPages/CRODoc';
 import DocumentsHomepage from './components/DocumentPages/DocumentsHomepage';
 import BlogCrafting from './components/BlogPages/BlogCrafting';
+import BlogDatabaseSelection from './components/BlogPages/BlogDatabaseSelection';
 
 
 function App() {
@@ -169,7 +170,7 @@ function App() {
               <Navbar />
               <ContactHero />
               <BlogSubscription />     
-              <BlogCrafting />   
+              <BlogDatabaseSelection />   
               <ConnectWithUs/>  
               <FooterSection />
               <Footer />

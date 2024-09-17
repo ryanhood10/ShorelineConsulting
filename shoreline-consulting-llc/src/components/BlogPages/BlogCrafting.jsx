@@ -18,7 +18,7 @@ const BlogCrafting = () => {
         <title>Crafting a Strong Online Foundation: Essential Strategies for Digital Success</title>
         <meta name="description" content="A comprehensive guide to building a high-performing website that drives traffic and converts visitors into loyal customers." />
       </head>
-      
+
       <div className="max-w-5xl mx-auto bg-white p-8 md:p-16 rounded-lg shadow-xl">
         {/* Blog Header */}
         <header className="mb-12 text-center">
