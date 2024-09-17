@@ -53,6 +53,7 @@ import CRODoc from './components/DocumentPages/CRODoc';
 import DocumentsHomepage from './components/DocumentPages/DocumentsHomepage';
 import BlogCrafting from './components/BlogPages/BlogCrafting';
 import BlogDatabaseSelection from './components/BlogPages/BlogDatabaseSelection';
+import BlogRagsToRiches from './components/BlogPages/BlogRagsToRiches';
 
 
 function App() {
@@ -171,6 +172,20 @@ function App() {
               <ContactHero />
               <BlogSubscription />     
               <BlogDatabaseSelection />   
+              <ConnectWithUs/>  
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/Blog/rags-to-riches"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <BlogSubscription />     
+              <BlogRagsToRiches />   
               <ConnectWithUs/>  
               <FooterSection />
               <Footer />
