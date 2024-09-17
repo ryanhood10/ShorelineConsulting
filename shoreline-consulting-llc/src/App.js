@@ -163,6 +163,20 @@ function App() {
           }
         />
         <Route
+          path="/Blog/selecting-the-right-database"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <BlogSubscription />     
+              <BlogCrafting />   
+              <ConnectWithUs/>  
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+        <Route
           path="/Portfolio"
           element={
             <>
