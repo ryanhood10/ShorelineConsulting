@@ -51,6 +51,7 @@ import DatabaseManagementDoc from './components/DocumentPages/DatabaseManagement
 import SEODoc from './components/DocumentPages/SEODoc';
 import CRODoc from './components/DocumentPages/CRODoc';
 import DocumentsHomepage from './components/DocumentPages/DocumentsHomepage';
+import BlogCrafting from './components/BlogPages/BlogCrafting';
 
 
 function App() {
@@ -141,6 +142,20 @@ function App() {
               <ContactHero />
               <BlogSubscription />     
               <BlogPostHomepage />   
+              <ConnectWithUs/>  
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/Blog/crafting-online-presence"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <BlogSubscription />     
+              <BlogCrafting />   
               <ConnectWithUs/>  
               <FooterSection />
               <Footer />

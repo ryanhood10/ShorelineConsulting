@@ -20,7 +20,7 @@ const CROFeatures = () => {
             <div className="flex justify-center mb-4">
               <FaChartLine className="text-blue-500 text-5xl" />
             </div>
-            <h2 className="text-2xl font-semibold mb-2">Conversion Catalyst™</h2>
+            <h2 className="text-2xl font-semibold mb-2">Increased Conversions</h2>
             <p className="text-gray-400">Site Optimization to boost performance and drive conversions.</p>
           </div>
 
