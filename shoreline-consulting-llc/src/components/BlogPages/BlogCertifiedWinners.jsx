@@ -263,18 +263,18 @@ const BlogCertifiedWinners = () => {
 
 
   {/* 3D Model Viewer */}
-  <div className="grid grid-col-1 md:grid-cols-2 py-2 gap-4">
-   {/* Two Canvases Side by Side */}
-          {/* Canvas 1 - PalmTree3D */}
-          <div className="w-1/2 mx-auto ">
-            <canvas ref={palmTreeCanvasRef} ></canvas>
-          </div>
+<div className="grid grid-cols-1 md:grid-cols-2 py-2 gap-4 mx-auto">
+  {/* Canvas 1 - PalmTree3D */}
+  <div className="w-full h-[250px] mx-auto md:w-1/2">
+    <canvas ref={palmTreeCanvasRef}></canvas>
+  </div>
 
-          {/* Canvas 2 - Duck3D */}
-          <div className="w-1/2 mx-auto h-1/2">
-            <canvas ref={duckCanvasRef} ></canvas>
-          </div>
-    </div>
+  {/* Canvas 2 - Duck3D */}
+  <div className="w-full h-[250px] mx-auto md:w-1/2">
+    <canvas ref={duckCanvasRef}></canvas>
+  </div>
+</div>
+
 
   {/* Additional Use Cases */}
   <p className="text-lg text-gray-800 mt-6">
