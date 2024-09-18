@@ -20,7 +20,7 @@ const BlogCertifiedWinners = () => {
     const palmTreeCanvasRef = useRef(null);
     const duckCanvasRef = useRef(null);
     
-    const initializeScene = (canvasRef, modelPath, shouldRotateDuck = false) => {
+    const initializeScene = (canvasRef, modelPath = false, shouldRotateDuck = true) => {
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0xf0f0f0); // Set background color
       
@@ -37,7 +37,7 @@ const BlogCertifiedWinners = () => {
         loader.load(modelPath, (gltf) => {
           // Check if the model is the duck and rotate it clockwise by 90 degrees on the Y-axis
           if (shouldRotateDuck) {
-            gltf.scene.rotation.y = Math.PI / 2; // Rotate 90 degrees clockwise
+            gltf.scene.rotation.y = -Math.PI / 2; // Rotate 90 degrees clockwise
           }
       
           scene.add(gltf.scene);
@@ -105,10 +105,7 @@ const BlogCertifiedWinners = () => {
     
   return (
     <div className="bg-gray-100 min-h-screen py-12">
-      {/* <head>
-        <title>Certified Winners: Our New Favorite AI Tools</title>
-        <meta name="description" content="Explore our curated list of AI tools that are revolutionizing the way businesses create visuals, 3D assets, presentations, and animated videos." />
-      </head> */}
+     
 
       <div className="max-w-5xl mx-auto bg-white p-8 md:p-16 rounded-lg shadow-xl">
         {/* Blog Header */}
