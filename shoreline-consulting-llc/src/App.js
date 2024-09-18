@@ -54,6 +54,7 @@ import DocumentsHomepage from './components/DocumentPages/DocumentsHomepage';
 import BlogCrafting from './components/BlogPages/BlogCrafting';
 import BlogDatabaseSelection from './components/BlogPages/BlogDatabaseSelection';
 import BlogRagsToRiches from './components/BlogPages/BlogRagsToRiches';
+import BlogCertifiedWinners from './components/BlogPages/BlogCertifiedWinners';
 
 
 function App() {
@@ -186,6 +187,20 @@ function App() {
               <ContactHero />
               <BlogSubscription />     
               <BlogRagsToRiches />   
+              <ConnectWithUs/>  
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/Blog/certified-ai-winners"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <BlogSubscription />     
+              <BlogCertifiedWinners />   
               <ConnectWithUs/>  
               <FooterSection />
               <Footer />

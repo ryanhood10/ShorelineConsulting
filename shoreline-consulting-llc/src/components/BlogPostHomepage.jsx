@@ -3,6 +3,7 @@ import Globe from '../assets/Globe.png'; // Assuming you have this image in your
 import BlogPoster from '../assets/HitchHikerBlog.webp';
 import CertBlog from '../assets/CertBlog.webp';
 import ShorelineLogo from '../assets/PalmTreeTransparent.png';
+import BlogImage1 from '../assets/BlogPictures/RagsToRichesHero.webp';
 
 const BlogPostHomepage = () => {
   const [selectedTopic, setSelectedTopic] = useState('all');
@@ -41,7 +42,7 @@ const BlogPostHomepage = () => {
       title: 'Rags to Riches: How to Utilize Web Technologies to Earn More Profits',
       subheading: 'Harness the power of the web to maximize your revenue',
       topic: 'Marketing',
-      image: Globe,
+      image: BlogImage1,
       date: 'February 15, 2023',
     },
   ];
@@ -134,7 +135,7 @@ const BlogPostHomepage = () => {
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-56 "
                 />
                 <div className="p-4">
                   <span className="inline-block px-3 py-1 bg-blue-100 text-blue-600 text-xs font-semibold rounded-full mb-2">
