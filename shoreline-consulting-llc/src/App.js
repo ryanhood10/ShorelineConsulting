@@ -55,6 +55,7 @@ import BlogCrafting from './components/BlogPages/BlogCrafting';
 import BlogDatabaseSelection from './components/BlogPages/BlogDatabaseSelection';
 import BlogRagsToRiches from './components/BlogPages/BlogRagsToRiches';
 import BlogCertifiedWinners from './components/BlogPages/BlogCertifiedWinners';
+import BlogMobileApp from './components/BlogPages/BlogMobileApp';
 
 
 function App() {
@@ -201,6 +202,20 @@ function App() {
               <ContactHero />
               <BlogSubscription />     
               <BlogCertifiedWinners />   
+              <ConnectWithUs/>  
+              <FooterSection />
+              <Footer />
+            </>
+          }
+        />
+         <Route
+          path="/Blog/great-mobile-apps"
+          element={
+            <>
+              <Navbar />
+              <ContactHero />
+              <BlogSubscription />     
+              <BlogMobileApp />   
               <ConnectWithUs/>  
               <FooterSection />
               <Footer />
