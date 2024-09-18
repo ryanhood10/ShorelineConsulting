@@ -260,15 +260,19 @@ const BlogCertifiedWinners = () => {
 
 
   {/* 3D Model Viewer */}
-<div className="grid grid-cols-1 md:grid-cols-2 py-2 gap-4 mx-auto">
+<div className="grid grid-cols-1 md:grid-cols-2 py-2 gap-12 md:gap-4 md:pb-16 mx-auto">
   {/* Canvas 1 - PalmTree3D */}
   <div className="w-full h-[250px] mx-auto md:w-1/2">
     <canvas ref={palmTreeCanvasRef}></canvas>
+    <h3 className="py-2">Luma AI example prompt: <span className="text-gray-700">Palm tree on an island </span> </h3>
+
   </div>
 
   {/* Canvas 2 - Duck3D */}
   <div className="w-full h-[250px] mx-auto md:w-1/2">
     <canvas ref={duckCanvasRef}></canvas>
+    <h3>Luma AI example prompt: <span className="text-gray-700">Duck </span> </h3>
+
   </div>
 </div>
 
