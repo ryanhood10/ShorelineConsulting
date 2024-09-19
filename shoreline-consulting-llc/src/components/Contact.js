@@ -112,7 +112,7 @@ const Contact = () => {
         <div className="w-full md:w-1/3 hidden md:block">
           <img
             src={Stamp}
-            alt="Technology Consulting"
+            alt="Technology Solutions"
             className="w-full h-auto rounded-lg"
           />
         </div>

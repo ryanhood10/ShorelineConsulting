@@ -10,7 +10,7 @@ const SeoCta = () => {
           <div className="absolute left-0 top-1/2 transform -translate-y-1/2 hidden lg:block">
             <img
               src={VerticalLogo}
-              alt="Shoreline Consulting Logo"
+              alt="Shoreline Business Logo"
               className="h-48 w-auto"
             />
           </div>
@@ -19,7 +19,7 @@ const SeoCta = () => {
           <div className="lg:hidden mb-6">
             <img
               src={VerticalLogo}
-              alt="Shoreline Consulting Logo"
+              alt="Shoreline Business Logo"
               className="mx-auto h-32 w-auto"
             />
           </div>
@@ -28,7 +28,7 @@ const SeoCta = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
             OPTIMIZE FOR GOOGLE AND AI SEARCH
             <br />
-            WITH SHORELINE CONSULTING
+            WITH SHORELINE BUSINESS SOLUTIONS
           </h2>
 
           {/* Desktop Button */}

@@ -26,7 +26,7 @@ const Navbar = () => {
             />
             <span
             className='text-lg'
-            >Shoreline Consulting</span>
+            >Shoreline Business Solutions</span>
           </Link>
           <nav className="hidden md:flex space-x-6 pl-8">
             <Link to="/Company" className="hover:text-cyan-300 transition-colors duration-200">Company</Link>

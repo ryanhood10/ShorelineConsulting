@@ -28,12 +28,12 @@ const Hero = () => {
       {/* Text Container */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full p-4 text-center">
         <h2 className="text-2xl sm:text-1xl md:text-2xl lg:text-3xl text-white">
-          Shoreline Consulting Services
+          Shoreline Business Solutions
           <br />
           Leverage Technology to Gain Your Business Advantage
         </h2>
         <p className="text-md md:text-lg text-gray-300 max-w-2xl mx-auto mt-4">
-          Shoreline Consulting specializes in web development, database builds, AI integrations, and SEO to help your business grow and succeed in the digital world.
+          Shoreline Business Solutions specializes in web development, database builds, AI integrations, and SEO to help your business grow and succeed in the digital world.
         </p>
         <div className="mt-6 flex space-x-4">
           <button

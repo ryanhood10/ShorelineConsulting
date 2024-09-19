@@ -9,7 +9,7 @@ const WebsiteCTA = () => {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight mb-8">
             TAKE YOUR BUSINESS TO THE <b>NEXT LEVEL</b>
             <br />
-            WITH SHORELINE CONSULTING
+            WITH SHORELINE BUSINESS SOLUTIONS
           </h2>
           {/* Desktop Button */}
           <div className="hidden md:inline-block">

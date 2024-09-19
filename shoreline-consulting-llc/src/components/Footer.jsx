@@ -31,7 +31,7 @@ const Footer = () => {
 
         </div>
         <div className="text-center md:text-right">
-          <p className="text-sm text-gray-400">© 2024 Shoreline Consulting LLC. All rights reserved.</p>
+          <p className="text-sm text-gray-400">© 2024 Shoreline Business Solutions. All rights reserved.</p>
         </div>
       </div>
     </footer>
