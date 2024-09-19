@@ -10,11 +10,9 @@ import Forest from '../../assets/BlogPictures/ForestLandscape.png';
 
 const BlogRagsToRiches = () => {
   return (
+    
     <div className="bg-gray-100 min-h-screen py-12">
-      <head>
-        <title>Rags to Riches: Leveraging Web Technologies for Maximum Profits</title>
-        <meta name="description" content="Learn how to harness the power of web technologies like AI, data analytics, e-commerce, and digital marketing to drive revenue and transform your business from rags to riches." />
-      </head>
+     
 
       <div className="max-w-5xl mx-auto bg-white p-8 md:p-16 rounded-lg shadow-xl">
         {/* Blog Header */}

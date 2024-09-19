@@ -25,13 +25,7 @@ import FooterImage from '../../assets/BlogPictures/MobileAppFooter2.png';
 const BlogMobileApp = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-12">
-      <head>
-        <title>What Makes a Stellar Mobile App: A Comprehensive Guide</title>
-        <meta
-          name="description"
-          content="Learn how to craft a successful mobile app with user-friendly design, robust functionality, and innovative features."
-        />
-      </head>
+      
 
       <div className="max-w-5xl mx-auto bg-white p-8 md:p-16 rounded-lg shadow-xl">
         {/* Blog Header */}

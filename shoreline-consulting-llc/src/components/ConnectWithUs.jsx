@@ -18,11 +18,11 @@ const ConnectWithUs = () => {
 
   return (
     <footer className="bg-gray-900 text-white">
-      <div className="text-center max-w-7xl mx-auto p-8">
+      <div  className="text-center max-w-7xl mx-auto p-8">
         <h4 className="text-lg lg:text-xl text-cyan-500 mt-4">STAY CONNECTED</h4>
         <p className="text-md lg:text-lg text-gray-500">WHERE TO FIND US</p>
         <hr className="mt-8 w-full border-t-2 border-gray-300" />
-
+  
         {/* Social Media Row */}
         <div className="mt-6 mb-12">
           <h3 className="text-lg font-semibold mb-4">SOCIAL MEDIA</h3>

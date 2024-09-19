@@ -9,10 +9,7 @@ import Picture1 from '../../assets/DocumentPictures/DatabaseManagement1.webp';
 const BlogDatabaseSelection = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-12">
-      <head>
-        <title>A Hitchhiker's Guide to Selecting the Right Database</title>
-        <meta name="description" content="A comprehensive guide to choosing the right database for your project based on your needs. Learn about factors to consider, different types of databases, and expert advice." />
-      </head>
+     
 
       <div className="max-w-5xl mx-auto bg-white p-8 md:p-16 rounded-lg shadow-xl">
         {/* Blog Header */}

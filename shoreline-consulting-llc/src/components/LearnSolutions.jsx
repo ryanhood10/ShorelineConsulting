@@ -233,6 +233,7 @@ const LearnSolutions = () => {
 
   return (
     <section className="bg-gray-900 text-white relative">
+       
       {/* Heading Section */}
       <div className="text-center max-w-7xl mx-auto p-8">
         <h4 className="text-lg lg:text-xl text-cyan-500 mt-4">DOCS</h4>
@@ -249,7 +250,7 @@ const LearnSolutions = () => {
             <span
               key={sectionKey}
               onClick={() => setActiveSection(sectionKey)}
-              className={`cursor-pointer text-sm transition duration-300 ${
+              className={`cursor-pointer text-xs sm:text-sm md:text-md transition duration-300 ${
                 activeSection === sectionKey ? 'text-cyan-500' : 'text-gray-300 hover:text-cyan-500'
               }`}
             >
@@ -283,6 +284,8 @@ const LearnSolutions = () => {
             <div className="mt-4">{sections[activeSection].content}</div>
           </section>
         </div>
+        <div id="stay-connected-section"></div>
+
       </div>
     </section>
   );

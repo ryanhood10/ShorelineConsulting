@@ -23,7 +23,7 @@ const CompanyMeet = () => {
               Join our Team
             </a>
             <a
-              href="/Blog/"
+              href="/Blog"
               className="flex items-center justify-center border-2 border-blue-500 text-center font-semibold transition-colors duration-300 focus:outline-offset-2 focus:outline-blue-500 px-6 py-3 text-base lg:text-lg bg-white text-blue-500 hover:bg-blue-100 hover:border-blue-600"
             >
               Our Blog
