@@ -271,7 +271,7 @@ const BlogCertifiedWinners = () => {
   {/* Canvas 2 - Duck3D */}
   <div className="w-full h-[250px] mx-auto md:w-1/2">
     <canvas ref={duckCanvasRef}></canvas>
-    <h3>Luma AI example prompt: <span className="text-gray-700">Duck </span> </h3>
+    <h3 className="py-2">Luma AI example prompt: <span className="text-gray-700">Duck </span> </h3>
 
   </div>
 </div>

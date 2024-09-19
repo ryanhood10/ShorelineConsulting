@@ -213,7 +213,6 @@ function App() {
           element={
             <>
               <Navbar />
-              <ContactHero />
               <BlogSubscription />     
               <BlogMobileApp />   
               <ConnectWithUs/>  
