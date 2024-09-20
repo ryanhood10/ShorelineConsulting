@@ -33,7 +33,7 @@ const CodeExamples = () => {
               } transition-colors`}
               onClick={() => setActiveText(1)}
             >
-              Learn
+              Automate
             </button>
             <button
               className={`text-left text-body hover:text-black lg:text-2xl ${

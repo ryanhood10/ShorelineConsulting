@@ -6,22 +6,27 @@ import FuzzEraserLogo from '../assets/partnerLogos/FuzzEraserLogo.png';
 import VincentPeachLogo from '../assets/partnerLogos/VincentPeachLogo.png';
 import KroegerRealEstateLogo from '../assets/partnerLogos/KroegerRealEstateLogo.webp';
 import PMTsiteLogo from '../assets/partnerLogos/PMTLogo.png';
-import NashTrash from '../assets/partnerLogos/TrashHaulLogo.png';
+// import NashTrash from '../assets/partnerLogos/TrashHaulLogo.png';
 import IBMLogo from '../assets/partnerLogos/IBMLogo.png';
 import ShopLogo from '../assets/partnerLogos/ShopifyPartnerLogo.png';
 import ShorelineLogo from '../assets/PalmTreeTransparent.png';
+import SeaverLogo from '../assets/partnerLogos/SeaverLogoNewHorizontal.png';
+import JerniganLawLogo from '../assets/partnerLogos/JerniganLawLogo.png';
+
 
 const partnerLogos = [
-  BondsSouthEastIncLogo,
   CreativeColoringLogo,
   FuzzEraserLogo,
   VincentPeachLogo,
   KroegerRealEstateLogo,
   IBMLogo,
+  // NashTrash,
   PMTsiteLogo,
   BitcoinBayLogo,
+  JerniganLawLogo,
   ShopLogo,
-  NashTrash,
+  SeaverLogo,
+  BondsSouthEastIncLogo
 ];
 
 const CompanyPartners = () => {
