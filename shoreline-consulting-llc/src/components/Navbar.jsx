@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Logo from '../assets/PalmtreeLeftLogo.webp';
+// import Logo from '../assets/PalmtreeLeftLogo.webp';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/ShorelineLogoCyan.png'
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,15 +19,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Logo and Title */}
         <div className="flex items-center space-x-6">
-          <Link to="/" className="flex items-center space-x-2 text-3xl font-bold text-cyan-500 hover:text-cyan-300">
+          <Link to="/" className="pl-8 md:pl-0 flex items-center space-x-2 text-3xlfont-bold">
             <img
               src={Logo}
               alt="Akira Web Solutions Logo"
-              className="h-8 rounded-xl"
+              className="h-14 rounded-xl hover:grayscale"
             />
-            <span
+            {/* <span
             className='text-lg'
-            >Shoreline Business Solutions</span>
+            >Shoreline Business Solutions</span> */}
           </Link>
           <nav className="hidden md:flex space-x-6 pl-8">
             <Link to="/Company" className="hover:text-cyan-300 transition-colors duration-200">Company</Link>
@@ -99,6 +100,13 @@ const Navbar = () => {
               </svg>
             </button>
             <Link
+              to="/"
+              className="block text-gray-400 hover:text-cyan-300 py-2 transition-colors duration-200"
+              onClick={closeMobileMenu}
+            >
+              Home
+            </Link>
+            <Link
               to="/Company"
               className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
               onClick={closeMobileMenu}
@@ -121,13 +129,7 @@ const Navbar = () => {
               Solutions
             </Link>
            
-            <Link
-              to="/Login"
-              className="block text-gray-400 hover:text-cyan-300 py-2 transition-colors duration-200"
-              onClick={closeMobileMenu}
-            >
-              Login
-            </Link>
+          
             <Link
               to="/Contact"
               className="block bg-cyan-500 text-gray-900 px-4 py-2 rounded-md mt-2 mx-4 hover:bg-cyan-400 transition-colors duration-200"

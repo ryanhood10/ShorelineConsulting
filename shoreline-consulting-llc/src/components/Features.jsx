@@ -30,7 +30,7 @@ const FeaturesSection = () => {
             <p className="text-base md:text-lg leading-[150%]">
               We will manage your data solutions by choosing the right {' '}
               <a
-                href="/"
+                href="/Solutions/database-management"
                 className="text-black underline hover:opacity-60"
               >
                 database for you
@@ -109,7 +109,7 @@ const FeaturesSection = () => {
             <p className="text-base md:text-lg leading-[150%]">
               Put your online store or website on the forefront of the web by leveraging our {' '}
               <a
-                href="blog/rag-study"
+                href="Solutions/seo-strategies"
                 className="text-black underline hover:opacity-60"
               >
                 Search Engine Optimization

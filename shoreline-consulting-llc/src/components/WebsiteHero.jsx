@@ -38,14 +38,16 @@ const WebsiteHero = () => {
             <p className="text-gray-600 text-center">
               We create visually stunning, high-converting landing pages with all the functionality you need—from forms to advanced integrations.
             </p>
-            <div className="text-center mt-6">
-              <span className="text-blue-500 font-semibold">MORE ON LANDING PAGES</span>
-            </div>
+            <p className="text-gray-600 py-4 text-center">
+                Check out our Blog on what it takes to craft a good website!</p>
+    
+              <span className="text-blue-500  font-semibold">READ BLOG</span>
+              
           </a>
 
           {/* Web Apps Development Card */}
           <a
-            href="/websites/web-apps"
+            href="/docs/website-builds"
             target="_self"
             className="bg-gray-100 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
           >
@@ -63,14 +65,14 @@ const WebsiteHero = () => {
             <p className="text-gray-600 text-center">
               Whether it’s for internal use or customer-facing, we build powerful web apps that are secure, scalable, and tailored to your business.
             </p>
-            <div className="text-center mt-6">
+            <p className="text-gray-600 py-4 text-center">
+                What do we do in creating web applications?</p>
               <span className="text-blue-500 font-semibold">LEARN ABOUT WEB APPS</span>
-            </div>
           </a>
 
           {/* Phone Apps Development Card */}
           <a
-            href="/websites/phone-apps"
+            href="/Blog/great-mobile-apps"
             target="_self"
             className="bg-gray-100 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
           >
@@ -88,9 +90,9 @@ const WebsiteHero = () => {
             <p className="text-gray-600 text-center">
               We create seamless, user-friendly mobile apps for iOS and Android, taking care of everything from development to store submission.
             </p>
-            <div className="text-center mt-6">
-              <span className="text-blue-500 font-semibold">LEARN ABOUT PHONE APPS</span>
-            </div>
+            <p className="text-gray-600 py-4 text-center">
+                Check out our Blog on what makes a great mobile application.</p>
+                <span className="text-blue-500 font-semibold">READ BLOG</span>
           </a>
         </div>
       </div>

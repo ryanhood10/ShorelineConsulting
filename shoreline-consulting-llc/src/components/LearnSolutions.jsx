@@ -28,7 +28,7 @@ const LearnSolutions = () => {
 
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/website-builds/e-commerce"
+              href="/docs/website-builds"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />
@@ -45,7 +45,7 @@ const LearnSolutions = () => {
 
           <div className="text-center p-4 flex-1">
             <a
-              href="/docs/website-builds/web-apps"
+              href="/docs/website-builds"
               className="flex flex-col items-center space-y-4 group"
             >
               <FaFileAlt className="text-blue-400 text-4xl group-hover:text-cyan-500 transition duration-300" />

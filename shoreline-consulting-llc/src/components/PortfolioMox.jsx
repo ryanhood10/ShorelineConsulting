@@ -26,11 +26,11 @@ const PortfolioHome = () => {
    // Adjusted responsive settings for the carousel to handle various screen sizes
    const responsive = {
     mobile: {
-      breakpoint: { max: 768, min: 0 }, // Adjusted breakpoint to match Tailwind's small screens
+      breakpoint: { max: 639, min: 0 }, // Adjusted breakpoint to match Tailwind's small screens
       items: 1,
     },
     tablet: {
-      breakpoint: { max: 1023, min: 768 }, // Tailwind's medium screens (tablet)
+      breakpoint: { max: 1023, min: 640 }, // Tailwind's medium screens (tablet)
       items: 2,
     },
     desktop: {
@@ -156,16 +156,12 @@ const PortfolioHome = () => {
           <img src={ShorelineLogo} alt="Shoreline Logo" className="h-16 w-20 md:h-20 md:w-24 ml-4 transform scale-x-[-1]" />
         </div>
         <div className="text-center mb-8">
-          <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-            Explore our work across various domains, including Websites, Web Apps, E-Commerce, SEO, Databases, and AI Projects.
-          </p>
+          <p className="mt-4 text-lg text-gray-700 leading-relaxed">Explore our work across various domains, including Websites, Web Apps, E-Commerce, SEO, Databases, and AI Projects.</p>
         </div>
 
         {/* Categories */}
         {Object.keys(categorizedProjects).map((category) => (
           <div key={category} className="mb-12">
-                      <hr className="mb-8" />
-
             <h3 className="text-2xl font-bold text-gray-800 mb-6">{category}</h3>
             {/* Carousel */}
             <Carousel
@@ -173,39 +169,20 @@ const PortfolioHome = () => {
               infinite={true}
               autoPlay={false}
               arrows={true}
-              itemClass="px-4" // Control spacing between items
+              itemClass="px-2" // Control spacing between items
               containerClass="p-4" // Control padding around the carousel
-              customLeftArrow={
-                <button
-                  className="absolute left-[0px] top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-3 hover:bg-cyan-500 transition-colors duration-300"
-                  aria-label="Previous"
-                >
-                  ←
-                </button>
-              }
-              customRightArrow={
-                <button
-                  className="absolute right-[0px] top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-3 hover:bg-cyan-500 transition-colors duration-300"
-                  aria-label="Next"
-                >
-                  →
-                </button>
-              }
+              
             >
               {categorizedProjects[category].map((project, index) => (
                 <div
                   key={index}
-                  className="bg-white shadow-md rounded-lg mx-auto cursor-pointer hover:shadow-xl transition-shadow duration-300 w-[300px] h-[350px] flex flex-col"
+                  className="bg-white shadow-md rounded-lg mx-auto cursor-pointer hover:shadow-xl transition-shadow duration-300"
                   onClick={() => setSelectedProject({ ...project, category })}
                 >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-48 object-cover rounded-t-lg"
-                  />
-                  <div className="p-4 flex-1 flex flex-col justify-between overflow-hidden">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2 truncate">{project.title}</h3>
-                    <p className="text-gray-600 mb-2 flex-1 overflow-hidden text-ellipsis">{project.description}</p>
+                  <img src={project.image} alt={project.title} className="w-full h-48 object-cover rounded-t-lg" />
+                  <div className="p-4">
+                    <h3 className="text-xl font-semibold text-gray-900 mb-2">{project.title}</h3>
+                    <p className="text-gray-600 mb-2">{project.description}</p>
                   </div>
                 </div>
               ))}
@@ -234,4 +211,4 @@ const PortfolioHome = () => {
   );
 };
 
-export default PortfolioHome;
+// export default PortfolioHome;

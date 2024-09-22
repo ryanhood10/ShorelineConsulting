@@ -36,7 +36,7 @@ const WebsiteExamples = () => {
         <h4 className="text-xl md:text-2xl font-semibold mb-2">
           RECENT EXAMPLES |{' '}
           <a
-            href="/Solutions/website-builds/showcase"
+            href="/Portfolio"
             className="font-bold text-blue-500 hover:underline"
           >
             VIEW FULL PORTFOLIO

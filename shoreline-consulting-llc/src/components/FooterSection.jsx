@@ -49,7 +49,7 @@ const FooterSection = () => {
               <img
                 className="w-full rounded-md"
                 src={Stamp}
-                alt="Approved Tech Consulting"
+                alt="Approved Tech Solutions"
               />
             </div>
 
