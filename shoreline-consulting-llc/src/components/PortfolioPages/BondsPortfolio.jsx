@@ -36,7 +36,7 @@ const PortfolioBonds = () => {
         </Link>
         {/* Portfolio Header */}
         <header className="mb-12 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 mt-4 mb-4">
             Bonds Southeast Inc. - Transforming an Outdated Website into a Modern, High-Performing Platform
           </h1>
           <p className="text-gray-600 text-lg">

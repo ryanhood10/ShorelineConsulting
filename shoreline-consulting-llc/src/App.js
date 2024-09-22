@@ -58,6 +58,7 @@ import BlogCertifiedWinners from './components/BlogPages/BlogCertifiedWinners';
 import BlogMobileApp from './components/BlogPages/BlogMobileApp';
 import PortfolioBonds from './components/PortfolioPages/BondsPortfolio';
 import PortfolioPMT from './components/PortfolioPages/PMTPortfolio';
+import PortfolioSeaverMarketing from './components/PortfolioPages/PortfolioSeaverMarketing';
 
 
 function App() {
@@ -242,7 +243,7 @@ function App() {
           path="/Portfolio/seaver-marketing-group"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioPMT />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioSeaverMarketing />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
  <Route

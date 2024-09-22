@@ -34,7 +34,7 @@ const PortfolioPMT = () => {
 
         {/* Portfolio Header */}
         <header className="mb-12 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 mt-4 mb-4">
             PMT Site - Building an Online Presence for a Local Subcontracting Company
           </h1>
           <p className="text-gray-600 text-lg">
