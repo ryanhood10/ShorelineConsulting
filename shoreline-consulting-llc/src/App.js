@@ -56,6 +56,8 @@ import BlogDatabaseSelection from './components/BlogPages/BlogDatabaseSelection'
 import BlogRagsToRiches from './components/BlogPages/BlogRagsToRiches';
 import BlogCertifiedWinners from './components/BlogPages/BlogCertifiedWinners';
 import BlogMobileApp from './components/BlogPages/BlogMobileApp';
+import PortfolioBonds from './components/PortfolioPages/BondsPortfolio';
+import PortfolioPMT from './components/PortfolioPages/PMTPortfolio';
 
 
 function App() {
@@ -221,19 +223,104 @@ function App() {
             </>
           }
         />
+        {/* Portfolio Pages */}
         <Route
           path="/Portfolio"
-          element={
-            <>
-              <Navbar />
-              <ContactHero />
-              <PortfolioHome />     
-              <ConnectWithUs/>
-              <FooterSection />
-              <Footer />
-            </>
-          }
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
         />
+         <Route
+          path="/Portfolio/bonds-southeast"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioBonds />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+ <Route
+          path="/Portfolio/seaver-marketing-group"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioPMT />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+ <Route
+          path="/Portfolio/pmt-site"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioPMT />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+
+<Route
+          path="/Portfolio/bitcoin-bay"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+         <Route
+          path="/Portfolio/saas-shell"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+ <Route
+          path="/Portfolio/creative-coloring"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+ <Route
+          path="/Portfolio/vincent-peach"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+
+<Route
+          path="/Portfolio/product-listing-optimization"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+
+<Route
+          path="/Portfolio/seo-boost-strategy"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+ <Route
+          path="/Portfolio/database-manager"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+
+<Route
+          path="/Portfolio/bitcoin-bay-chatbot"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+ <Route
+          path="/Portfolio/3d-model-maker"
+          element={   
+             <> 
+              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+            </>     }
+        />
+
+
             <Route
             path="/Solutions/ai-agents"
             element={

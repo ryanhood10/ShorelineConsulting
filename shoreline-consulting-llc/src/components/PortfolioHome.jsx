@@ -5,7 +5,7 @@ import WebAppImage from '../assets/flowchart.webp';
 import DatabaseImage from '../assets/Databases.png';
 // import AIToolsImage from '../assets/BondsWebsite.png';
 // import BitcoinBayBot from '../assets/pictures/BitcoinBayBot.png';
-import btcBayWebsite from '../assets/websitePics/btcBayWebsite.png'
+import btcBayWebsite from '../assets/websitePics/btcBayWebsite.png';
 import SeaverMarketing1 from '../assets/pictures/SeaverMarketing1.png';
 import TrashHaul from '../assets/pictures/NashTrashHaul.png';
 import PMTwebsite from '../assets/pictures/PMTwebsite.png';
@@ -15,7 +15,7 @@ import ModelMaker from '../assets/websitePics/3DModelSite.png';
 import CreativeColoringSite from '../assets/websitePics/CreativeColoring.png';
 import VincentPeachSite from '../assets/websitePics/VincentPeachSite.png';
 import ShopifyConversion from '../assets/websitePics/ShopifyConversion5.png';
-import GoogleA from '../assets/websitePics/GoogleA4.png'
+import GoogleA from '../assets/websitePics/GoogleA4.png';
 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -23,8 +23,8 @@ import 'react-multi-carousel/lib/styles.css';
 const PortfolioHome = () => {
   const [selectedProject, setSelectedProject] = useState(null);
 
-   // Adjusted responsive settings for the carousel to handle various screen sizes
-   const responsive = {
+  // Adjusted responsive settings for the carousel to handle various screen sizes
+  const responsive = {
     mobile: {
       breakpoint: { max: 768, min: 0 }, // Adjusted breakpoint to match Tailwind's small screens
       items: 1,
@@ -48,13 +48,15 @@ const PortfolioHome = () => {
         image: BondsSouthEastSite,
         date: '2023',
         details: 'We revitalized Bonds Southeast Inc\'s website, bringing it to the forefront of modern design with improved user experience and SEO-optimized content.',
+        link: '/Portfolio/bonds-southeast',
       },
       {
         title: 'Seaver Marketing Group',
-        description: 'A professional marketing ebsite that funnels clients to book meetings',
+        description: 'A professional marketing website that funnels clients to book meetings',
         image: SeaverMarketing1,
         date: '2023',
         details: 'We crafted a conversion-focused website for Seaver Marketing Group, optimized with SEO and analytics.',
+        link: '/Portfolio/seaver-marketing',
       },
       {
         title: 'Nash Trash Haul',
@@ -62,6 +64,7 @@ const PortfolioHome = () => {
         image: TrashHaul,
         date: '2023',
         details: 'We created a visually appealing and SEO-optimized website for Nashville Trash Haul.',
+        link: '/Portfolio/pmt-site',
       },
       {
         title: 'PMT Site',
@@ -69,6 +72,7 @@ const PortfolioHome = () => {
         image: PMTwebsite,
         date: '2023',
         details: 'We crafted a website with SEO and Google Analytics integration, helping the company grow their online presence.',
+        link: '/Portfolio/pmt-site',
       },
     ],
     'Web Apps': [
@@ -78,6 +82,7 @@ const PortfolioHome = () => {
         image: WebAppImage,
         date: 'May 5, 2023',
         details: `Performance optimized, Subscription Service Ready. Let us be the launch pad to ensure your Saas Product reaches its potential. You can focus on your application, we will handle the rest!`,
+        link: '/Portfolio/saas-shell',
       },
       {
         title: 'Bitcoin Bay',
@@ -85,6 +90,7 @@ const PortfolioHome = () => {
         image: btcBayWebsite,
         date: '2023',
         details: 'We designed a website that concisely communicates information and funnels clients to sign-up for the application; while storing & collecting their information for further marketing efforts.',
+        link: '/Portfolio/bitcoin-bay',
       },
     ],
     'E-Commerce': [
@@ -94,22 +100,25 @@ const PortfolioHome = () => {
         image: CreativeColoringSite,
         date: 'March 2, 2023',
         details: 'We developed a platform using secure payment gateways and fast loading times.',
-      }, 
+        link: '/Portfolio/creative-coloring',
+      },
       {
         title: 'Vincent Peach',
-        description: 'A luxery e-commerce experience',
+        description: 'A luxury e-commerce experience',
         image: VincentPeachSite,
         date: 'March 2, 2023',
         details: 'We redesigned a site that gives users a high-end shopping experience while directing them towards sales.',
+        link: '/Portfolio/vincent-peach',
       },
     ],
     'CRO & SEO': [
       {
         title: 'Product Listing SEO & CRO',
-        description: 'Improving Google Ranking through AI natural language & relevant key word tags',
+        description: 'Improving Google Ranking through AI natural language & relevant keyword tags',
         image: ShopifyConversion,
         date: 'January 10, 2023',
         details: 'We improved our client\'s search engine ranking through comprehensive SEO strategies.',
+        link: '/Portfolio/product-listing-optimization',
       },
       {
         title: 'SEO Boost Strategy',
@@ -117,6 +126,7 @@ const PortfolioHome = () => {
         image: GoogleA,
         date: 'January 10, 2023',
         details: 'We improved our client\'s search engine ranking through comprehensive SEO strategies.',
+        link: '/Portfolio/seo-boost-strategy',
       },
     ],
     Databases: [
@@ -126,6 +136,7 @@ const PortfolioHome = () => {
         image: DatabaseImage,
         date: 'August 22, 2022',
         details: 'We ensured zero downtime and enhanced data security with our migration services.',
+        link: '/Portfolio/database-manager',
       },
     ],
     'AI Projects': [
@@ -135,6 +146,7 @@ const PortfolioHome = () => {
         image: btcBayWebsite,
         date: 'June 30, 2023',
         details: 'We built an AI tools suite to optimize business operations and streamline workflows.',
+        link: '/Portfolio/bitcoin-bay-chatbot',
       },
       {
         title: '3D Model Maker- LumaAI',
@@ -142,6 +154,7 @@ const PortfolioHome = () => {
         image: ModelMaker,
         date: 'July 15, 2023',
         details: `This project involved creating a custom interface to interact with Luma AI's 3D Model API. As a user, you may upload a video of any object scan - resulting in a 3D model being produced in just a few short minutes. Please read "Best Practices" page for instructions on the video scan. `,
+        link: '/Portfolio/3d-model-maker',
       },
     ],
   };
@@ -164,8 +177,7 @@ const PortfolioHome = () => {
         {/* Categories */}
         {Object.keys(categorizedProjects).map((category) => (
           <div key={category} className="mb-12">
-                      <hr className="mb-8" />
-
+            <hr className="mb-8" />
             <h3 className="text-2xl font-bold text-gray-800 mb-6">{category}</h3>
             {/* Carousel */}
             <Carousel
@@ -173,8 +185,8 @@ const PortfolioHome = () => {
               infinite={true}
               autoPlay={false}
               arrows={true}
-              itemClass="px-4" // Control spacing between items
-              containerClass="p-4" // Control padding around the carousel
+              itemClass="px-4"
+              containerClass="p-4"
               customLeftArrow={
                 <button
                   className="absolute left-[0px] top-1/2 transform -translate-y-1/2 bg-gray-500 text-white rounded-full p-3 hover:bg-cyan-500 transition-colors duration-300"
@@ -220,6 +232,17 @@ const PortfolioHome = () => {
               <h2 className="text-2xl font-bold mb-4">{selectedProject.title}</h2>
               <img src={selectedProject.image} alt={selectedProject.title} className="w-full h-48 object-contain mb-4 rounded" />
               <p className="text-gray-700 mb-4">{selectedProject.details}</p>
+              <p className="text-gray-700 mb-4">
+                To read more,{' '}
+                <a
+                  href={selectedProject.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-500"
+                >
+                  click here
+                </a>.
+              </p>
               <button
                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500"
                 onClick={() => setSelectedProject(null)}
