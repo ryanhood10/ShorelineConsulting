@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Ensure react-router-dom is installed if using React Router
 import SeaverHeader from '../../assets/PortfolioPictures/SeaverHeader.png';
-import SeaverCalendly from '../../assets/PortfolioPictures/SeaverCalendly.png';
+import SeaverCalendly from '../../assets/PortfolioPictures/SeaverCalandly.png';
 import SeaverFooter from '../../assets/PortfolioPictures/SeaverFooter.png';
 import { FaMobileAlt, FaHandHoldingUsd, FaRegCalendarAlt, FaChartLine } from "react-icons/fa"; // Icons for each section
 import Logo from '../../assets/PalmTreeTransparent.png';
@@ -142,7 +142,20 @@ const PortfolioSeaverMarketing = () => {
           <hr className="mb-8" />
           <p className="text-lg text-gray-800 text-center">
             Seaver Marketing Group’s revamped website now reflects their growing professionalism and commitment to client engagement. With integrated booking tools, strategic SEO, and a focus on conversions, Seaver is well-equipped to continue expanding their client base.
-          </p>
+            <br/>
+        
+        To view their website,{" "}
+        <a
+          href="https://seavermarketing.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-500"
+        >
+          click here
+        </a>.
+      </p>
+      
+      <hr className="mt-8"/>
           <p className="text-lg text-gray-800 text-center mt-4">
             If you're ready to elevate your business's online presence, contact Shoreline Business Solutions today and discover how we can help you achieve your goals.
           </p>

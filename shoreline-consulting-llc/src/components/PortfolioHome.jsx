@@ -56,7 +56,7 @@ const PortfolioHome = () => {
         image: SeaverMarketing1,
         date: '2023',
         details: 'We crafted a conversion-focused website for Seaver Marketing Group, optimized with SEO and analytics.',
-        link: '/Portfolio/seaver-marketing',
+        link: '/Portfolio/seaver-marketing-group',
       },
       {
         title: 'Nash Trash Haul',
