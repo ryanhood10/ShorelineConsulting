@@ -60,6 +60,12 @@ import PortfolioBonds from './components/PortfolioPages/BondsPortfolio';
 import PortfolioPMT from './components/PortfolioPages/PMTPortfolio';
 import PortfolioSeaverMarketing from './components/PortfolioPages/PortfolioSeaverMarketing';
 import PortfolioBitcoinBay from './components/PortfolioPages/PortfolioBitcoinBay';
+import PortfolioSaasProduct from './components/PortfolioPages/PortfolioSaasProject';
+import PortfolioCreativeColoring from './components/PortfolioPages/PortfolioCreativeColoring';
+import PortfolioVincentPeach from './components/PortfolioPages/PortfolioVincentPeach';
+import PortfolioProductListingSEOAndCRO from './components/PortfolioPages/PortfolioProductListingSEOAndCRO';
+import PortfolioSEOStrategy from './components/PortfolioPages/PortfolioSEOStrategy';
+import PortfolioDatabaseManager from './components/PortfolioPages/PortfolioDatabaseManager';
 
 
 function App() {
@@ -266,21 +272,21 @@ function App() {
           path="/Portfolio/saas-shell"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioSaasProduct />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
  <Route
           path="/Portfolio/creative-coloring"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioCreativeColoring />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
  <Route
           path="/Portfolio/vincent-peach"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioVincentPeach />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
 
@@ -288,7 +294,7 @@ function App() {
           path="/Portfolio/product-listing-optimization"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioProductListingSEOAndCRO />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
 
@@ -296,14 +302,14 @@ function App() {
           path="/Portfolio/seo-boost-strategy"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioSEOStrategy />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
  <Route
           path="/Portfolio/database-manager"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioDatabaseManager />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
 
