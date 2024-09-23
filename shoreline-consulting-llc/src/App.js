@@ -59,6 +59,7 @@ import BlogMobileApp from './components/BlogPages/BlogMobileApp';
 import PortfolioBonds from './components/PortfolioPages/BondsPortfolio';
 import PortfolioPMT from './components/PortfolioPages/PMTPortfolio';
 import PortfolioSeaverMarketing from './components/PortfolioPages/PortfolioSeaverMarketing';
+import PortfolioBitcoinBay from './components/PortfolioPages/PortfolioBitcoinBay';
 
 
 function App() {
@@ -258,7 +259,7 @@ function App() {
           path="/Portfolio/bitcoin-bay"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioBitcoinBay />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
          <Route
