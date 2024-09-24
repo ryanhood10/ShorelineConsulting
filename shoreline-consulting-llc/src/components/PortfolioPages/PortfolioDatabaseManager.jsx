@@ -2,10 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom"; // Ensure react-router-dom is installed if using React Router
 // import DatabaseHeader from '../../assets/PortfolioPictures/DatabaseHeader.png'; // Example image of the database interface
 // import DatabaseInputs from '../../assets/PortfolioPictures/DatabaseInputs.png'; // Image showing inputs and outputs of the database
-import DatabaseHeader from '../../assets/PortfolioPictures/connected.webp';
-import DatabaseInputs from '../../assets/PortfolioPictures/LighthouseScore.gif';
-import { FaDatabase, FaCode, FaCogs, FaCloud } from "react-icons/fa"; // Icons for each section
+import DatabaseHeader from '../../assets/PortfolioPictures/DatabaseHeader.png';
+import DatabaseInputs from '../../assets/PortfolioPictures/DatabaseInput.png';
+import { FaDatabase, FaCode, FaCogs, FaCloud, FaGlobe } from "react-icons/fa"; // Icons for each section
 import Logo from '../../assets/PalmTreeTransparent.png';
+
+
 
 const PortfolioDatabaseManager = () => {
   return (
@@ -132,25 +134,44 @@ const PortfolioDatabaseManager = () => {
 
           <hr className="mb-8" />
 
-          {/* Section 4: How to Run the Project */}
+          {/* Section 4: Live Deployment and Custom Formatting */}
           <article className="space-y-4">
             <h2 className="text-2xl font-semibold text-cyan-600 text-center flex items-center justify-center">
-              <FaCode className="mr-2" /> How to Run the Project (for developers)
+              <FaGlobe className="mr-2" /> Live Deployment and Custom Formatting
+            </h2>
+            <p className="text-lg text-gray-800">
+              Your Database Manager will be deployed to a live website and formatted to your specific needs. We ensure that your database interface is not only functional but also visually aligned with your business brand and operational workflows. This level of customization allows for an intuitive user experience, making data management straightforward and effective for all users.
+            </p>
+            <ul className="list-disc ml-6 text-lg space-y-2">
+              <li>Deploys directly to your live website, providing real-time data management capabilities.</li>
+              <li>Custom formatting options to align with your business’s branding and user needs.</li>
+              <li>Adaptable to evolving requirements, allowing easy updates and feature additions.</li>
+            </ul>
+          </article>
+
+          <hr className="mb-8" />
+
+          {/* Section 5: How to Run the Project */}
+          <article className="space-y-4">
+            <h2 className="text-2xl font-semibold text-cyan-600 text-center flex items-center justify-center">
+              <FaCode className="mr-2" /> How to Run the Project
             </h2>
             <p className="text-lg text-gray-800">
               Follow these steps to set up and run the Database Manager project:
             </p>
-            <ul className="list-decimal text-start ml-6 text-lg space-y-2">
-              <li>Clone the repository. at <a href='https://github.com/ryanhood10/DatabaseManager'>https://github.com/ryanhood10/DatabaseManager</a></li>
+            <ul className="list-disc ml-6 text-lg space-y-2">
+              <li>Clone the repository.</li>
               <li>Run <code>npm install</code> to install the required dependencies.</li>
               <li>
                 Create a <code>.env</code> file in the root directory and add your MySQL database credentials:
-                <ul className="list-disc ml-6 mt-2">
-                  <li><code>DB_HOST=&lt;your_host&gt;</code></li>
-                  <li><code>DB_USER=&lt;your_user&gt;</code></li>
-                  <li><code>DB_PASS=&lt;your_password&gt;</code></li>
-                  <li><code>DB_NAME=&lt;your_database_name&gt;</code></li>
-                </ul>
+                <br />
+                <code>DB_HOST=&lt;your_host&gt;</code>
+                <br />
+                <code>DB_USER=&lt;your_user&gt;</code>
+                <br />
+                <code>DB_PASS=&lt;your_password&gt;</code>
+                <br />
+                <code>DB_NAME=&lt;your_database_name&gt;</code>
               </li>
               <li>Import the provided SQL schema files into your MySQL database.</li>
               <li>Run the application with <code>node index.js</code>.</li>
@@ -162,8 +183,10 @@ const PortfolioDatabaseManager = () => {
         <footer className="mt-16">
           <hr className="mb-8" />
           <p className="text-lg text-gray-800 text-center">
-            Our Database Manager project offers a comprehensive solution for businesses looking to control their data with custom SQL interfaces. Whether you need simple inputs and outputs or a fully tailored interface, our solutions provide the flexibility and power needed for effective data management.
+            Our custom Database Manager solution is designed to meet your data management needs with flexible, cloud-hosted interfaces tailored to your business. From live deployment to customized formatting, we provide all the tools needed for effective data management.
           </p>
+          <hr className="mb-8 mt-8" />
+
           <p className="text-lg text-gray-800 text-center mt-4">
             Contact Shoreline Business Solutions today to learn how we can create a custom database management solution tailored to your needs.
           </p>

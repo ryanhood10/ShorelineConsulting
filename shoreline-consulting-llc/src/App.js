@@ -66,6 +66,8 @@ import PortfolioVincentPeach from './components/PortfolioPages/PortfolioVincentP
 import PortfolioProductListingSEOAndCRO from './components/PortfolioPages/PortfolioProductListingSEOAndCRO';
 import PortfolioSEOStrategy from './components/PortfolioPages/PortfolioSEOStrategy';
 import PortfolioDatabaseManager from './components/PortfolioPages/PortfolioDatabaseManager';
+import PortfolioModelMaker from './components/PortfolioPages/PortfolioModelMaker';
+import PortfolioBitcoinBayChatbot from './components/PortfolioPages/PortfolioBitcoinBayChatbot';
 
 
 function App() {
@@ -317,14 +319,14 @@ function App() {
           path="/Portfolio/bitcoin-bay-chatbot"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioBitcoinBayChatbot />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
  <Route
           path="/Portfolio/3d-model-maker"
           element={   
              <> 
-              <Navbar />  <ContactHero />    <PortfolioHome />    <ConnectWithUs/> <FooterSection />         <Footer />
+              <Navbar />  <ContactHero />    <PortfolioModelMaker />    <ConnectWithUs/> <FooterSection />         <Footer />
             </>     }
         />
 
