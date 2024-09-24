@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import WebAppImage from '../assets/flowchart.webp';
-// import ECommerceImage from '../assets/OnlineHome.webp';
-// import SEOImage from '../assets/SEOHero.webp';
 import DatabaseImage from '../assets/Databases.png';
-// import AIToolsImage from '../assets/BondsWebsite.png';
-// import BitcoinBayBot from '../assets/pictures/BitcoinBayBot.png';
+
 import btcBayWebsite from '../assets/websitePics/btcBayWebsite.png';
-import SeaverMarketing1 from '../assets/pictures/SeaverMarketing1.png';
-import TrashHaul from '../assets/pictures/NashTrashHaul.png';
+import SeaverMarketing1 from '../assets/PortfolioPictures/SeaverHeader.png';
+// import TrashHaul from '../assets/pictures/NashTrashHaul.png';
 import PMTwebsite from '../assets/pictures/PMTwebsite.png';
 import ShorelineLogo from '../assets/PalmTreeTransparent.png';
 import BondsSouthEastSite from '../assets/websitePics/BondsSoutheastSite.png';
@@ -58,14 +55,14 @@ const PortfolioHome = () => {
         details: 'We crafted a conversion-focused website for Seaver Marketing Group, optimized with SEO and analytics.',
         link: '/Portfolio/seaver-marketing-group',
       },
-      {
-        title: 'Nash Trash Haul',
-        description: 'A Dynamic Landing Page',
-        image: TrashHaul,
-        date: '2023',
-        details: 'We created a visually appealing and SEO-optimized website for Nashville Trash Haul.',
-        link: '/Portfolio/pmt-site',
-      },
+      // {
+      //   title: 'Nash Trash Haul',
+      //   description: 'A Dynamic Landing Page',
+      //   image: TrashHaul,
+      //   date: '2023',
+      //   details: 'We created a visually appealing and SEO-optimized website for Nashville Trash Haul.',
+      //   link: '/Portfolio/pmt-site',
+      // },
       {
         title: 'PMT Site',
         description: 'Optimized Landing Page for Subcontracting Business',
@@ -93,7 +90,7 @@ const PortfolioHome = () => {
         link: '/Portfolio/bitcoin-bay',
       },
     ],
-    'E-Commerce': [
+    'E-Commerce Sites': [
       {
         title: 'Creative Coloring',
         description: 'An expressive e-commerce website',
@@ -131,11 +128,11 @@ const PortfolioHome = () => {
     ],
     Databases: [
       {
-        title: 'Cloud Database Migration',
-        description: 'Seamless transition to cloud-based databases',
+        title: 'Cloud Database Manager',
+        description: 'A Customized Data Solution',
         image: DatabaseImage,
         date: 'August 22, 2022',
-        details: 'We ensured zero downtime and enhanced data security with our migration services.',
+        details: 'Securily hosted on the cloud, we ensure that your data is always protected and available. Get a custom-built interface to manage your data.',
         link: '/Portfolio/database-manager',
       },
     ],
