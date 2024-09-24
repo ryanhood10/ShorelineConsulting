@@ -20,7 +20,7 @@ const WebsiteHero = () => {
         <div className="grid gap-8 lg:grid-cols-3">
           {/* Landing Page Development Card */}
           <a
-            href="/websites/landing-pages"
+            href="/Blog/crafting-online-presence"
             target="_self"
             className="bg-gray-100 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105"
           >

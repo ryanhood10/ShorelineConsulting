@@ -122,19 +122,21 @@ const PortfolioBitcoinBayChatbot = () => {
           <hr className="mb-8" />
 
           {/* Section 4: Benefits of Chatbot Integration */}
-          <article className="space-y-4">
-            <h2 className="text-2xl font-semibold text-cyan-600 text-center flex items-center justify-center">
-              <FaCogs className="mr-2" /> Benefits of Chatbot Integration
-            </h2>
-            <p className="text-lg text-gray-800">
-              The chatbot has become an invaluable asset to Bitcoin Bay, automating routine customer support tasks, collecting customer feedback, and improving overall service efficiency. It allows the team to focus on more complex issues while the bot handles basic inquiries, provides instant gratification for users, and supports the company’s marketing efforts by gathering data and promoting targeted upsells.
-            </p>
-            <ul className="list-disc ml-6 text-lg space-y-2">
-              <li>Automated routine tasks, reducing the need for manual customer service intervention.</li>
-              <li>Improved user engagement with real-time responses and support availability 24/7.</li>
-              <li>Collected valuable data on customer interactions to inform business decisions.</li>
-            </ul>
-          </article>
+<article className="space-y-4">
+  <h2 className="text-2xl font-semibold text-cyan-600 text-center flex items-center justify-center">
+    <FaCogs className="mr-2" /> Benefits of Chatbot Integration
+  </h2>
+  <p className="text-lg text-gray-800">
+    The chatbot has become an invaluable asset to Bitcoin Bay, automating routine customer support tasks, collecting customer feedback, and improving overall service efficiency. It allows the team to focus on more complex issues while the bot handles basic inquiries, provides instant gratification for users, and supports the company’s marketing efforts by gathering data and promoting targeted upsells. The chatbot is implemented as an easy-to-install widget that appears as a button on the bottom right of the website, making it simple for visitors to engage without disrupting their browsing experience.
+  </p>
+  <ul className="list-disc ml-6 text-lg space-y-2">
+    <li>Automated routine tasks, reducing the need for manual customer service intervention.</li>
+    <li>Improved user engagement with real-time responses and support availability 24/7.</li>
+    <li>Collected valuable data on customer interactions to inform business decisions.</li>
+    <li>Easy-to-install widget appearing as a chatbot button on the bottom right of the website.</li>
+  </ul>
+</article>
+
         </section>
 
         {/* Conclusion and Call-to-Action */}

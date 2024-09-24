@@ -6,9 +6,9 @@ const FooterSection = () => {
     <div className="bg-gray-900 text-gray-300 py-12">
       <div className="container mx-auto px-4">
         <div className="flex flex-col xl:flex-row items-center xl:items-start justify-between">
-          <div className="grid w-full grid-cols-2 gap-8 md:grid-cols-5 xl:grid-cols-5">
+          <div className="grid w-full grid-cols-2 gap-8 md:grid-cols-4 xl:grid-cols-4">
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
-              <span className="text-body leading-[1.0625rem]">Solutions</span>
+              <span className="text-lg leading-[1.0625rem]">Solutions</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
                 <a href="/Solutions/website-builds">Website Builds</a>
                 <a href="/Solutions/ai-agents">AI Agent</a>
@@ -18,7 +18,7 @@ const FooterSection = () => {
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
-              <span className="text-body leading-[1.0625rem]">Resources</span>
+              <span className="text-lg leading-[1.0625rem]">Resources</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
                 <a href="/Learn">Learning Center</a>
                 <a href="/docs">Documents</a>
@@ -27,7 +27,7 @@ const FooterSection = () => {
               </div>
             </div>
             <div className="shrink-0 text-sm md:text-base text-center md:text-left">
-              <span className="text-body leading-[1.0625rem]">Company</span>
+              <span className="text-lg leading-[1.0625rem]">Company</span>
               <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
                 <a href="/Company">About</a>
                 <a href="/partners/">Partners</a>
@@ -35,17 +35,10 @@ const FooterSection = () => {
                 <a href="/Contact">Contact</a>
               </div>
             </div>
-            <div className="shrink-0 text-sm md:text-base text-center md:text-left">
-              <span className="text-body leading-[1.0625rem]">Legal</span>
-              <div className="mt-[0.875rem] flex flex-col gap-2 text-gray-300 [&>a:focus]:underline [&>a:focus]:outline-none [&>a:hover]:underline [&>a:focus]:text-cyan-500 [&>a:hover]:text-cyan-500">
-                <a href="/legal/">Customer Terms</a>
-                <a href="/terms/">Website Terms</a>
-                <a href="/privacy/">Privacy</a>
-              </div>
-            </div>
+        
 
             {/* Image container, hidden on mobile and displayed on md and above */}
-            <div className="hidden md:block w-full shrink-0 xl:mr-20 mb-8 xl:mb-0">
+            <div className="w-[80%] mx-auto  md:w-full shrink-0 xl:mr-20 mb-8 xl:mb-0">
               <img
                 className="w-full rounded-md"
                 src={Stamp}

@@ -165,7 +165,13 @@ const PortfolioHome = () => {
         {/* Section Heading */}
         <div className="flex items-center justify-center pb-4">
           <img src={ShorelineLogo} alt="Shoreline Logo" className="h-16 w-20 md:h-20 md:w-24 mr-4" />
-          <h2 className="text-3xl font-bold text-gray-900 md:text-4xl">Portfolio</h2>
+          {/* <h1 className="text-3xl font-bold text-gray-900 md:text-4xl">Portfolio</h1> */}
+          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">Projects / 
+           <br className='block sm:hidden'/>
+           Strategies / 
+           <br className='block sm:hidden'/>
+
+             Case Studies</h2>
           <img src={ShorelineLogo} alt="Shoreline Logo" className="h-16 w-20 md:h-20 md:w-24 ml-4 transform scale-x-[-1]" />
         </div>
         <div className="text-center mb-8">
