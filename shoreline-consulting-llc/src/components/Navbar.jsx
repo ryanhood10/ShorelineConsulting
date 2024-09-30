@@ -33,7 +33,7 @@ const Navbar = () => {
             <Link to="/Company" className="hover:text-cyan-300 transition-colors duration-200">Company</Link>
             <Link to="/Learn" className="hover:text-cyan-300 transition-colors duration-200">Learn</Link>
             <Link to="/Solutions" className="hover:text-cyan-300 transition-colors duration-200">Solutions</Link>
-            {/* <Link to="/Docs" className="hover:text-cyan-300 transition-colors duration-200">Docs</Link> */}
+            <Link to="/Portfolio" className="hover:text-cyan-300 transition-colors duration-200">Case Studies</Link>
           </nav>
         </div>
 
@@ -129,7 +129,12 @@ const Navbar = () => {
               Solutions
             </Link>
            
-          
+            <Link to="/Portfolio" 
+              className="block text-gray-300 hover:text-cyan-300 py-2 transition-colors duration-200"
+              onClick={closeMobileMenu}
+            >
+              Case Studies</Link>
+
             <Link
               to="/Contact"
               className="block bg-cyan-500 text-gray-900 px-4 py-2 rounded-md mt-2 mx-4 hover:bg-cyan-400 transition-colors duration-200"
