@@ -2,10 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom"; // Ensure react-router-dom is installed if using React Router
 // import DatabaseHeader from '../../assets/PortfolioPictures/DatabaseHeader.png'; // Example image of the database interface
 // import DatabaseInputs from '../../assets/PortfolioPictures/DatabaseInputs.png'; // Image showing inputs and outputs of the database
-import DatabaseHeader from '../../assets/PortfolioPictures/DatabaseHeader.png';
+// import DatabaseHeader from '../../assets/PortfolioPictures/DatabaseHeader.png';
 import DatabaseInputs from '../../assets/PortfolioPictures/DatabaseInput.png';
-import { FaDatabase, FaCode, FaCogs, FaCloud, FaGlobe } from "react-icons/fa"; // Icons for each section
 import Logo from '../../assets/PalmTreeTransparent.png';
+import {  FaCode, FaCogs, FaCloud, FaGlobe } from "react-icons/fa";
+import DemoVideo from '../../assets/PortfolioPictures/DemoDatabaseManager.mp4'; // Path to the demo video
+import ReactLogo from '../../assets/credentiallogo7.jpeg';
+import PostgresLogo from '../../assets/credentiallogo6.png';
+import Expressjs from '../../assets/ExpressjsLogo.png';
+import NodejsLogo from '../../assets/NodejsLogo.png';
 
 
 
@@ -41,11 +46,16 @@ const PortfolioDatabaseManager = () => {
           <p className="text-gray-600 text-lg">
             A powerful solution for managing and interacting with your data using customized SQL database interfaces.
           </p>
-          <img
-            src={DatabaseHeader}
-            alt="Database Manager Header"
+          {/* Demo Video */}
+          <video
+            src={DemoVideo}
+            controls
             className="w-full rounded-md shadow-lg mt-8"
-          />
+            alt="Demo video of the Database Manager"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <p className="text-sm text-gray-500 mt-2">* This video is a demo of how the Database Manager works.</p>
         </header>
 
         {/* Portfolio Body */}
@@ -61,7 +71,7 @@ const PortfolioDatabaseManager = () => {
                 alt="Database Inputs and Outputs"
                 className="w-full h-auto rounded-md shadow-lg"
               />
-              <ul className="list-disc ml-6 text-lg space-y-2">
+              <ul className="list-disc text-start ml-6 text-lg space-y-2">
                 <li>Customizable interfaces for inputting, managing, and querying data.</li>
                 <li>Ability to print and filter data for specific business needs.</li>
                 <li>Secure, efficient, and adaptable to any SQL-based database.</li>
@@ -79,7 +89,7 @@ const PortfolioDatabaseManager = () => {
             <p className="text-lg text-gray-800">
               The Database Manager project leverages powerful technologies to provide a seamless and flexible experience for managing your SQL databases. Our approach ensures high performance, security, and adaptability.
             </p>
-            <ul className="list-disc ml-6 text-lg space-y-2">
+            <ul className="list-disc ml-6 text-lg text-start space-y-2">
               <li>
                 <strong>Node.js:</strong> A robust runtime environment that allows for scalable and high-performance applications.
               </li>
@@ -87,33 +97,22 @@ const PortfolioDatabaseManager = () => {
                 <strong>Express.js:</strong> A flexible framework for building web applications and APIs.
               </li>
               <li>
-                <strong>MySQL2:</strong> A fast and secure MySQL client for managing and querying databases.
+                <strong>PostgreSQL:</strong> A powerful, open-source object-relational database system.
               </li>
               <li>
-                <strong>Inquirer:</strong> A command-line interface tool for user interaction and input handling.
-              </li>
-              <li>
-                <strong>dotenv:</strong> Ensures secure management of sensitive environment variables.
+                <strong>React:</strong> A JavaScript library for building user interfaces efficiently.
               </li>
             </ul>
+            {/* Placeholder for technology logos */}
+            <div className="flex justify-center space-x-4 px-4 mt-6">
+              <img src={NodejsLogo} alt="Node.js Logo" className="h-16" />
+              <img src={Expressjs} alt="Express.js Logo" className="h-16" />
+              <img src={PostgresLogo} alt="PostgreSQL Logo" className="h-16" />
+              <img src={ReactLogo} alt="React Logo" className="h-16" />
+            </div>
           </article>
 
           <hr className="mb-8" />
-
-          {/* Section 2: Advantages of Custom Database Interfaces */}
-          <article className="space-y-4">
-            <h2 className="text-2xl font-semibold text-cyan-600 text-center flex items-center justify-center">
-              <FaDatabase className="mr-2" /> Advantages of Custom Database Interfaces
-            </h2>
-            <p className="text-lg text-gray-800">
-              Having a custom database interface allows businesses to have greater control over their data. Our tailored solutions provide the ability to filter, sort, and interact with data in ways that are not possible with standard off-the-shelf software.
-            </p>
-            <ul className="list-disc ml-6 text-lg space-y-2">
-              <li>Enhanced control and customization of your data management processes.</li>
-              <li>Ability to design interfaces that match your specific operational needs.</li>
-              <li>Increased efficiency in data handling, analysis, and reporting.</li>
-            </ul>
-          </article>
 
           <hr className="mb-8" />
 
@@ -125,7 +124,7 @@ const PortfolioDatabaseManager = () => {
             <p className="text-lg text-gray-800">
               Our database solutions are cloud-hosted, providing unparalleled scalability, security, and accessibility. By hosting your database in the cloud, we ensure that your data is always backed up, easily accessible, and protected against unauthorized access. Cloud hosting allows your database to scale with your business needs, offering flexible storage and performance options that can grow as your data grows.
             </p>
-            <ul className="list-disc ml-6 text-lg space-y-2">
+            <ul className="list-disc text-start ml-6 text-lg space-y-2">
               <li>Reliable data backup and recovery options.</li>
               <li>Enhanced security protocols to protect against unauthorized access and data breaches.</li>
               <li>Scalability to meet the growing demands of your business without hardware limitations.</li>
@@ -142,7 +141,7 @@ const PortfolioDatabaseManager = () => {
             <p className="text-lg text-gray-800">
               Your Database Manager will be deployed to a live website and formatted to your specific needs. We ensure that your database interface is not only functional but also visually aligned with your business brand and operational workflows. This level of customization allows for an intuitive user experience, making data management straightforward and effective for all users.
             </p>
-            <ul className="list-disc ml-6 text-lg space-y-2">
+            <ul className="list-disc text-start ml-6 text-lg space-y-2">
               <li>Deploys directly to your live website, providing real-time data management capabilities.</li>
               <li>Custom formatting options to align with your business’s branding and user needs.</li>
               <li>Adaptable to evolving requirements, allowing easy updates and feature additions.</li>
@@ -154,7 +153,7 @@ const PortfolioDatabaseManager = () => {
           {/* Section 5: How to Run the Project */}
           <article className="space-y-4">
             <h2 className="text-2xl font-semibold text-cyan-600 text-center flex items-center justify-center">
-              <FaCode className="mr-2" /> How to Run the Project
+              <FaCode className="mr-2" /> How to Run the Project (for Developers)
             </h2>
             <p className="text-lg text-gray-800">
               Follow these steps to set up and run the Database Manager project:
