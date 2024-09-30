@@ -11,7 +11,6 @@ import './App.css';  // Moved here
 import Contact from './components/Contact';
 import ContactHero from './components/ContactHero';
 import Solutions from './components/Solutions';
-import SolutionsVideo from './components/Video';
 import AIChatbotExplainer from './components/AIChatbotExplainer';
 import ChatbotBenefits from './components/ChatbotBenefits';
 import ProductsShowcase from './components/ProductsShowcase';
@@ -111,8 +110,6 @@ function App() {
                   <ProductsShowcase/>
                   <CustomerStory/>
                   <Solutions />
-                  <SolutionsVideo />
-
                   <Contact />
                   <FooterSection />
                   <Footer />
