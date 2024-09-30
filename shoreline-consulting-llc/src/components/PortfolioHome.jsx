@@ -13,7 +13,7 @@ import CreativeColoringSite from '../assets/websitePics/CreativeColoring.png';
 import VincentPeachSite from '../assets/websitePics/VincentPeachSite.png';
 import ShopifyConversion from '../assets/websitePics/ShopifyConversion5.png';
 import GoogleA from '../assets/websitePics/GoogleA4.png';
-
+import ChatbotHeader from '../assets/PortfolioPictures/BitcoinBayChatbotHeader.webp'; 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -140,7 +140,7 @@ const PortfolioHome = () => {
       {
         title: 'Automating Customer Service with AI',
         description: 'Cutting-edge AI chatbot solution for managing new clients',
-        image: btcBayWebsite,
+        image: ChatbotHeader,
         date: 'June 30, 2023',
         details: 'We built an AI tools suite to optimize business operations and streamline workflows.',
         link: '/Portfolio/bitcoin-bay-chatbot',
