@@ -238,13 +238,11 @@ const PortfolioHome = () => {
               <p className="text-gray-700 mb-4">
                 To read more,{' '}
                 <a
-                  href={selectedProject.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 hover:text-blue-500"
-                >
-                  click here
-                </a>.
+                    href={selectedProject.link}
+                    className="text-blue-600 hover:text-blue-500"
+                  >
+                    click here
+                  </a>.
               </p>
               <button
                 className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-500"
