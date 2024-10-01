@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Ensure react-router-dom is installed if using React Router
-import ModelMakerHeader from '../../assets/PortfolioPictures/Demo3DModelMaker.mp4'; 
 import ModelMakerDashboard from '../../assets/PortfolioPictures/ModelMakerDashboard.png'; 
 import { FaCube, FaCloudUploadAlt, FaCogs, FaQuestionCircle } from "react-icons/fa"; // Icons for each section
 import Logo from '../../assets/PalmTreeTransparent.png';
@@ -9,6 +8,7 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+
 
 const PortfolioModelMaker = () => {
 
@@ -117,7 +117,7 @@ const PortfolioModelMaker = () => {
           </p>
                    {/* Demo Video */}
                    <video
-            src={ModelMakerHeader}
+            src="https://res.cloudinary.com/didbhdjxz/video/upload/v1727796712/Demo3DModelMaker_irxwdy.mp4"
             controls
             className="w-full rounded-md shadow-lg mt-8"
             alt="Demo video of the 3D Model Maker"

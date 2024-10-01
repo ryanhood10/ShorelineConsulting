@@ -6,7 +6,6 @@ import { Link } from "react-router-dom"; // Ensure react-router-dom is installed
 import DatabaseInputs from '../../assets/PortfolioPictures/DatabaseInput.png';
 import Logo from '../../assets/PalmTreeTransparent.png';
 import {  FaCode, FaCogs, FaCloud, FaGlobe } from "react-icons/fa";
-import DemoVideo from '../../assets/PortfolioPictures/DemoDatabaseManager.mp4'; // Path to the demo video
 import ReactLogo from '../../assets/credentiallogo7.jpeg';
 import PostgresLogo from '../../assets/credentiallogo6.png';
 import Expressjs from '../../assets/ExpressjsLogo.png';
@@ -48,7 +47,7 @@ const PortfolioDatabaseManager = () => {
           </p>
           {/* Demo Video */}
           <video
-            src={DemoVideo}
+            src="https://res.cloudinary.com/didbhdjxz/video/upload/v1727796751/DemoDatabaseManager_wo6qzp.mp4"
             controls
             className="w-full rounded-md shadow-lg mt-8"
             alt="Demo video of the Database Manager"
