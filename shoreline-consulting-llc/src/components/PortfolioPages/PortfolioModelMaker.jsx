@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Ensure react-router-dom is installed if using React Router
-import ModelMakerHeader from '../../assets/PortfolioPictures/ModelMakerHeader.png'; 
+import ModelMakerHeader from '../../assets/PortfolioPictures/Demo3DModelMaker.mp4'; 
 import ModelMakerDashboard from '../../assets/PortfolioPictures/ModelMakerDashboard.png'; 
 import { FaCube, FaCloudUploadAlt, FaCogs, FaQuestionCircle } from "react-icons/fa"; // Icons for each section
 import Logo from '../../assets/PalmTreeTransparent.png';
@@ -115,11 +115,16 @@ const PortfolioModelMaker = () => {
           <p className="text-gray-600 text-lg">
             Create stunning 3D models from video scans with our custom-built interface that leverages Luma AI’s cutting-edge technology.
           </p>
-          <img
+                   {/* Demo Video */}
+                   <video
             src={ModelMakerHeader}
-            alt="3D Model Maker Header"
+            controls
             className="w-full rounded-md shadow-lg mt-8"
-          />
+            alt="Demo video of the 3D Model Maker"
+          >
+            Your browser does not support the video tag.
+          </video>
+          <p className="text-sm text-gray-500 mt-2">* This video is a demo of how the Database Manager works.</p>
         </header>
 
         {/* Portfolio Body */}
