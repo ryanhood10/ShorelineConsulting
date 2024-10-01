@@ -3,12 +3,10 @@ import { Link } from "react-router-dom"; // Ensure react-router-dom is installed
 import ModelMakerDashboard from '../../assets/PortfolioPictures/ModelMakerDashboard.png'; 
 import { FaCube, FaCloudUploadAlt, FaCogs, FaQuestionCircle } from "react-icons/fa"; // Icons for each section
 import Logo from '../../assets/PalmTreeTransparent.png';
-import Duck3D from '../../assets/BlogPictures/Duck3DModel.glb';
 import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import Pinata from '../../assets/PortfolioPictures/pinataScan.glb';
 
 const PortfolioModelMaker = () => {
     const duckCanvasRef = useRef(null);
@@ -29,7 +27,7 @@ const PortfolioModelMaker = () => {
         renderer.setSize(width, height);
 
         const loader = new GLTFLoader();
-        loader.load(Duck3D, (gltf) => {
+        loader.load('https://res.cloudinary.com/didbhdjxz/image/upload/v1727804470/Duck3DModel_htff5w.glb', (gltf) => {
             gltf.scene.rotation.y = -Math.PI / 2; // Rotate the Duck 90 degrees clockwise
             scene.add(gltf.scene);
         });
@@ -77,7 +75,7 @@ const PortfolioModelMaker = () => {
         renderer.setSize(width, height);
 
         const loader = new GLTFLoader();
-        loader.load(Pinata, (gltf) => {
+        loader.load('https://res.cloudinary.com/didbhdjxz/image/upload/v1727804135/pinataScan_gz1cln.glb', (gltf) => {
             gltf.scene.rotation.x = Math.PI / 8; // Apply different rotation for Pinata
             gltf.scene.scale.set(1.2, 1.2, 1.2); // Scale up the Pinata model
             scene.add(gltf.scene);

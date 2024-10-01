@@ -11,7 +11,6 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-import Duck3D from '../../assets/BlogPictures/Duck3DModel.glb';
 import MidJourneyExample from '../../assets/BlogPictures/MidJourneyExample.png';
 import BeautifulAIExample from '../../assets/BlogPictures/BeautifulAIExample.png';
 import HaiperVideo from '../../assets/BlogPictures/HaiperExample.mp4';
@@ -87,7 +86,7 @@ const BlogCertifiedWinners = () => {
       
       // Initialize the duck model with 90-degree clockwise rotation
       useEffect(() => {
-        initializeScene(duckCanvasRef, Duck3D, true); // Pass true to apply rotation for Duck3D
+        initializeScene(duckCanvasRef, 'https://res.cloudinary.com/didbhdjxz/image/upload/v1727804470/Duck3DModel_htff5w.glb', true); // Pass true to apply rotation for Duck3D
       }, []);
       
       
@@ -100,7 +99,7 @@ const BlogCertifiedWinners = () => {
     
     // Effect for the second model (Duck3D)
     useEffect(() => {
-      initializeScene(duckCanvasRef, Duck3D);
+      initializeScene(duckCanvasRef, 'https://res.cloudinary.com/didbhdjxz/image/upload/v1727804470/Duck3DModel_htff5w.glb');
     }, []);
     
   return (
