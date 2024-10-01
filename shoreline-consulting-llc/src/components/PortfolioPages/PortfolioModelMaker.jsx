@@ -8,79 +8,118 @@ import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
-
+import Pinata from '../../assets/PortfolioPictures/pinataScan.glb';
 
 const PortfolioModelMaker = () => {
-
-
     const duckCanvasRef = useRef(null);
-    
-    const initializeScene = (canvasRef, modelPath = false, shouldRotateDuck = true) => {
+    const pinataCanvasRef = useRef(null); // New ref for Pinata canvas
+
+    // Scene initialization for Duck3D model
+    const initializeDuckScene = (canvasRef) => {
         const scene = new THREE.Scene();
         scene.background = new THREE.Color(0xf0f0f0); // Set background color
-      
+
         const width = canvasRef.current.clientWidth;
-        const height = 250; // Explicitly set the height to 250px
-      
+        const height = 250;
+
         const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 1000);
-        camera.position.set(0, 1, 1.5); // Bring the camera closer to the model
-      
+        camera.position.set(0, 1, 1.5);
+
         const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, antialias: true });
         renderer.setSize(width, height);
-      
+
         const loader = new GLTFLoader();
-        loader.load(modelPath, (gltf) => {
-          // Check if the model is the duck and rotate it clockwise by 90 degrees on the Y-axis
-          if (shouldRotateDuck) {
-            gltf.scene.rotation.y = -Math.PI / 2; // Rotate 90 degrees clockwise
-          }
-      
-          scene.add(gltf.scene);
+        loader.load(Duck3D, (gltf) => {
+            gltf.scene.rotation.y = -Math.PI / 2; // Rotate the Duck 90 degrees clockwise
+            scene.add(gltf.scene);
         });
-      
+
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
         controls.dampingFactor = 0.25;
         controls.maxDistance = 10;
         controls.minDistance = 1;
-      
-        // Make the light brighter by increasing the intensity
-        const light = new THREE.DirectionalLight(0xffffff, 3); // Increase the intensity from 1 to 2 for more brightness
+
+        const light = new THREE.DirectionalLight(0xffffff, 3);
         light.position.set(0, 1, 1).normalize();
         scene.add(light);
-      
-        // Add ambient light to soften the shadows and make the scene brighter overall
-        const ambientLight = new THREE.AmbientLight(0xffffff, 1); // Optional: Add ambient light with lower intensity
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1);
         scene.add(ambientLight);
-      
+
         const animate = () => {
-          requestAnimationFrame(animate);
-          controls.update();
-          renderer.render(scene, camera);
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
         };
         animate();
-      
-        const handleResize = () => {
-          const newWidth = canvasRef.current.clientWidth;
-          renderer.setSize(newWidth, 250); // Keep the height fixed at 250px
-          camera.aspect = newWidth / 250;
-          camera.updateProjectionMatrix();
-        };
-      
-        window.addEventListener("resize", handleResize);
-      
-        return () => {
-          renderer.dispose();
-          window.removeEventListener("resize", handleResize);
-        };
-      };
-      
 
- // Initialize the duck model with 90-degree clockwise rotation
- useEffect(() => {
-    initializeScene(duckCanvasRef, Duck3D, true); // Pass true to apply rotation for Duck3D
-  }, []);
-  
+        window.addEventListener("resize", () => {
+            const newWidth = canvasRef.current.clientWidth;
+            renderer.setSize(newWidth, 250);
+            camera.aspect = newWidth / 250;
+            camera.updateProjectionMatrix();
+        });
+    };
+
+    // Scene initialization for Pinata model
+    const initializePinataScene = (canvasRef) => {
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xf0f0f0); // Change the background color for the Pinata scene
+
+        const width = canvasRef.current.clientWidth;
+        const height = 250; // A different height for the Pinata scene
+
+        const camera = new THREE.PerspectiveCamera(50, width / height, 0.1, 1000);
+        camera.position.set(1, 1, 7); // A different camera position for Pinata
+
+        const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current, antialias: true });
+        renderer.setSize(width, height);
+
+        const loader = new GLTFLoader();
+        loader.load(Pinata, (gltf) => {
+            gltf.scene.rotation.x = Math.PI / 8; // Apply different rotation for Pinata
+            gltf.scene.scale.set(1.2, 1.2, 1.2); // Scale up the Pinata model
+            scene.add(gltf.scene);
+        });
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.25;
+        controls.maxDistance = 15;
+        controls.minDistance = 2;
+
+        const light = new THREE.DirectionalLight(0xffffff, 2);
+        light.position.set(2, 3, 4).normalize();
+        scene.add(light);
+
+        const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Softer ambient light for Pinata
+        scene.add(ambientLight);
+
+        const animate = () => {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+        };
+        animate();
+
+        window.addEventListener("resize", () => {
+            const newWidth = canvasRef.current.clientWidth;
+            renderer.setSize(newWidth, 300); // Keep the height fixed at 300px
+            camera.aspect = newWidth / 300;
+            camera.updateProjectionMatrix();
+        });
+    };
+
+    // Initialize Duck3D on component mount
+    useEffect(() => {
+        initializeDuckScene(duckCanvasRef);
+    }, []);
+
+    // Initialize Pinata on component mount
+    useEffect(() => {
+        initializePinataScene(pinataCanvasRef);
+    }, []);
   
   
 
@@ -130,7 +169,7 @@ const PortfolioModelMaker = () => {
         {/* Portfolio Body */}
         <section className="space-y-16">
           {/* Project Overview */}
-          <article className="space-y-6">
+          <article className="space-y-6 ">
             <p className="text-lg text-gray-800">
               The 3D Model Maker project was developed in collaboration with Luma AI to make their "Dream Machine" technology accessible to everyday users. Previously available only to developers, our custom interface allows users to upload video scans and quickly generate high-quality 3D models. These models can be used in gaming, web design, and more, democratizing access to advanced 3D modeling.
             </p>
@@ -158,11 +197,21 @@ const PortfolioModelMaker = () => {
             <p className="text-lg text-gray-800">
               Users can upload a video of any object or scene, and within minutes, our app constructs a detailed 3D model. The process is intuitive and guided, allowing anyone to create high-quality 3D assets suitable for various applications, such as gaming, virtual reality, and web use.
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+
             <ul className="list-disc ml-6 text-lg space-y-2">
               <li>Easy-to-use upload system for video scans.</li>
               <li>Supports API keys from Luma AI, allowing up to 10 free uses or more with paid accounts.</li>
               <li>Delivers models within minutes, perfect for rapid prototyping and creative projects.</li>
             </ul>
+             {/* Pinata 3D Canvas */}
+             <div className="w-full h-[250px] text-center mx-auto md:w-1/2">
+                <canvas ref={pinataCanvasRef}></canvas>
+                <h3 className="py-2 text-center text-gray-700">Pinata 3D Model 
+                <br/>
+                <span className="font-extralight">Scanned with iPhone</span></h3>
+              </div>
+</div>
           </article>
 
           <hr className="mb-8" />
