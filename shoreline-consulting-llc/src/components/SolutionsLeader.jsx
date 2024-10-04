@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import StampLogo from "../assets/stamp2logo.webp";
+import StampLogo from "../assets/stamp2logo.jpg";
 
 function useVisible(initialVisibility = false) {
   const [isVisible, setIsVisible] = useState(initialVisibility);

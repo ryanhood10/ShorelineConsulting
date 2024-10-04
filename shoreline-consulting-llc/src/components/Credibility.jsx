@@ -9,7 +9,7 @@ import credentialLogo8 from '../assets/GoogleFirebaseHeaderLogo.svg';
 import credentialLogo9 from '../assets/BootstrapHeaderLogo.png';
 import credentialLogo10 from '../assets/MongodbHeaderLogo.jpg';
 import credentialLogo11 from '../assets/GoogleCloudHeaderLogo.png';
-import MailchimpLogo from  '../assets/MailchimpLogo.webp';
+import MailchimpLogo from  '../assets/MailChimpLogo.png';
 // Add more logo imports as needed
 
 const CredentialsSection = () => {
