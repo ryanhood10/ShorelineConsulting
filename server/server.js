@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, '..', 'shoreline-consulting-llc', 'b
 // Send email endpoint
 app.post('/contact', async (req, res) => {
   try {
-    const { name, email, message, recaptchaToken } = req.body;
+    const { name, email, message, preferredContact, recaptchaToken } = req.body;
 
     // Step 1: Verify reCAPTCHA
     const recaptchaResponse = await axios.post(
@@ -50,9 +50,9 @@ app.post('/contact', async (req, res) => {
 
     const mailOptions = {
       from: process.env.EMAIL,
-      to: 'connect@akirawebsolutions.com',
-      subject: 'ShorlineConsultingLLC - Contact Form Message',
-      text: `Name: ${name}\nEmail: ${email}\n\n${message}`,
+      to: 'connect@shorelinebusiness.solutions',
+      subject: 'Shoreline Business Solutions - Contact Form Message',
+      text: `Name: ${name}\nEmail: ${email}\n Preffered Contact: ${preferredContact}\n${message}`,
     };
 
     await transporter.sendMail(mailOptions);

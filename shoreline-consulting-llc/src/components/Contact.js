@@ -78,7 +78,7 @@ const Contact = () => {
     if (Object.keys(newErrors).length === 0) {
       try {
         await axios.post(
-          "https://ryans-portfolio.herokuapp.com/contact",
+          "https://www.shorelinebusiness.solutions/contact",
           { ...formData, recaptchaToken }
         );
         setSuccessMessage("Thank you! Your message has been sent.");
