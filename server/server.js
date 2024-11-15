@@ -3,6 +3,7 @@ const cors = require('cors');
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 const path = require('path');
+const axios = require('axios');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -20,8 +21,25 @@ app.use(express.static(path.join(__dirname, '..', 'shoreline-consulting-llc', 'b
 // Send email endpoint
 app.post('/contact', async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    const { name, email, message, recaptchaToken } = req.body;
 
+    // Step 1: Verify reCAPTCHA
+    const recaptchaResponse = await axios.post(
+      `https://www.google.com/recaptcha/api/siteverify`,
+      null,
+      {
+        params: {
+          secret: process.env.RECAPTCHA_SECRET_KEY, // Add this key to your .env file
+          response: recaptchaToken,
+        },
+      }
+    );
+
+    if (!recaptchaResponse.data.success) {
+      return res.status(400).json({ message: 'reCAPTCHA verification failed. Please try again.' });
+    }
+
+    // Step 2: Send email
     let transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -45,11 +63,11 @@ app.post('/contact', async (req, res) => {
   }
 });
 
-
 // The "catchall" handler: for any request that doesn't match one above, send back React's index.html file.
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'shoreline-consulting-llc', 'build', 'index.html'));
 });
+
 // Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
