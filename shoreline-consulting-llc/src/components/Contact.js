@@ -81,7 +81,7 @@ const Contact = () => {
           "https://www.shorelinebusiness.solutions/contact",
           { ...formData, recaptchaToken }
         );
-        setSuccessMessage("Thank you! Your message has been sent.");
+        setSuccessMessage("Thank you! Your message has been sent. Our team will respond to you in the next 24-48 hours!");
         setFormData({
           name: "",
           email: "",
