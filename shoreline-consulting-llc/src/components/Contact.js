@@ -204,7 +204,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                placeholder="Message"
+                placeholder="What can we help you with?"
                 className="p-3 min-h-[100px] w-full rounded-md bg-gray-100 border border-gray-300 focus:ring-2 focus:ring-blue-500"
                 value={formData.message}
                 onChange={handleInputChange}
